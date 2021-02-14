@@ -1,0 +1,263 @@
+.post {
+
+  header {
+
+      @include header('../assets/blog-header.jpg');
+
+      h2 {
+
+        @include heading(white);
+        margin: 12vh 0 0 0;
+        height: 35vh;
+
+      }
+    }
+  
+  main {
+
+    justify-content: space-between;
+
+    @include tabletpMQ {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 10%;
+    }
+
+    .left {
+
+      margin-top: 100px;
+      width: 37%;
+
+      @include tabletpMQ {
+        width: 80%;
+      }
+
+      aside {
+
+        background-color: $dark-blue;
+
+        img {
+          position: relative;
+          width: calc(100% - 20px);
+          top: -20px;
+          box-shadow: 20px 20px 0 $dark-blue;
+          margin-bottom: -20px;
+        }
+        
+        .content {
+
+          border-left: 60px $ice-blue solid;
+          z-index: 10;
+          padding: 20px 25px 40px 25px;
+          color: white;
+
+          h3 {
+            font-size: 2rem;
+            color: $dandelion;
+            letter-spacing: 0.3rem;
+          }
+
+          h3:not(:first-child) {
+            margin-top: 40px;
+          }
+
+          li::before {
+            content: "•";
+            font-size: 1.5rem;
+            margin-right: 20px;
+          }
+
+          li {
+
+            list-style-type: none;
+            margin-top: 10px;
+            list-style-position: inside;
+            text-indent: -25px;
+            margin-left: 30px;
+
+            a {
+              color: white;
+            }
+
+            a:hover,
+            a:focus {
+              color: $dandelion;
+            }
+            
+          }
+
+        }
+
+      }
+      //end of aside
+    }
+    //end of left
+
+    .right {
+
+      width: 57%;
+
+      @include tabletpMQ {
+        width: 90%;
+        align-self: flex-end;
+        order: -1;
+      }
+
+      @include mobileMQ {
+        width: 80%;
+        align-self: center;        
+      }
+
+      article {
+
+        border-bottom: solid $dandelion 4px;
+        position: relative;
+        top: -150px;
+
+        img {
+          width: calc(100% - 20px);
+          box-shadow: -20px 20px 0 $dandelion;
+          margin-left: 20px;
+        }
+    
+        .content {
+          
+          border-left: solid $dandelion 4px;
+          padding: 80px 80px 100px 100px;
+          
+          @include tabletMQ {
+            padding: 80px;
+          }
+
+          @include tabletpMQ {
+            padding: 90px 80px 80px;
+          }
+
+          @include mobileMQ {
+            border: unset;
+            padding: 60px 0;
+          }
+          
+          h1 {
+
+            font-size: 3.8rem;
+            line-height: 3.8rem;
+            color: $dark-blue;
+            margin-bottom: 20px;
+
+            @include mobileMQ {
+              font-size: 2.8rem;
+            }
+
+          }
+
+          p {
+            margin-top: 30px; 
+          }
+
+          p:first-of-type {
+            margin-top: 40px;
+          }
+
+        }
+        
+      }
+      //end of article
+    }
+    // end of right
+
+    .comments {
+
+      margin: -90px 100px 0;
+
+      @include w950MQ {
+        margin: -90px 50px 0;
+      }
+
+      @include tabletpMQ {
+        margin: -90px 0;
+      }
+
+      @include mobileMQ {
+        margin-top: -25%;
+      }
+
+      .comment {
+
+        margin: 50px 0;
+
+        img {
+
+          width: 10%;
+          max-width: 90px;
+          min-width: 50px;
+          height: 100%;
+          margin-right: 35px;
+
+          @include mobileMQ {
+            margin-right: 20px;
+          }
+
+        }
+
+        .text {
+
+          width: 75%;
+
+          @include mobileMQ {
+
+            width: calc(100% - 50px - 20px);
+
+            p {
+              font-size: 1.4rem;
+            }
+
+          }
+
+          p:first-child {
+
+            font-size: 1.8rem;
+            line-height: 1em;
+            font-weight: bolder;
+            color: $dark-blue;
+            margin-bottom: 10px;
+
+            @include mobileMQ {
+              font-size: 1.6rem;
+            }
+
+          }
+
+        }
+        // end of text
+
+      }
+      //end of comment
+      
+    }
+    // end of comments
+
+    form {
+
+      @include form(transparent, black, $dark-blue, $dandelion, $dark-blue);
+      width: 100%;
+      margin-bottom: 10%;
+
+      @include tabletMQ {
+        width: 90%;
+        padding: 0;
+        margin-top: -30px;
+      }
+
+      @include mobileMQ {
+        width: 100%;
+      }
+
+    }
+    // end of form
+
+  }
+  //end of main
+
+}
+// end of post page

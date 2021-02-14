@@ -1,0 +1,111 @@
+@mixin header($url) {
+  background: url($url) center / cover;
+  padding-top: 60px;
+}
+
+@mixin heading($color) {
+  font-size: calc(2.5rem + 2.8vw);
+  text-shadow: 2px 2px 4px black;
+  line-height: 1.2em;
+  color: $color;
+  align-self: flex-end;
+  margin: 0 0 4% 5%;
+}
+
+@mixin form($bgdcolor, $color, $btnbackground, $btncolor, $hover) {
+
+  justify-content: space-between;
+  background-color: $bgdcolor;
+  width: 60%;
+  padding: 25px 40px;
+
+  @include mobileMQ {
+    padding: 10px 0 0;
+  }
+
+  * {
+    color: $color;
+    background-color: transparent;
+    border: 2px solid $dandelion;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  input {
+    width: 45%;
+    padding: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    @include w950MQ() {
+      width: 100%;
+    }
+  }
+  
+  textarea::placeholder,
+  input::placeholder {
+    opacity: 1;
+  }
+
+  textarea {
+    padding: 20px;
+    resize: none;
+    width: 100%;
+    font-family: 'Roboto';
+    height: 180px;
+  }
+
+  button {
+    font-size: 2rem;
+    line-height: 1em;
+    width: 100%;
+    background-color: $btnbackground;
+    color: $btncolor;
+    border: 2px solid transparent;
+    padding: 10px 20px 7px;
+    transition: background-color 0.4s ease;
+
+    @include mobileMQ() {
+      margin-bottom: 40px;
+    }
+  }
+
+  button:hover,
+  button:focus {
+  border: solid 2px $dandelion;
+  background-color: transparent;
+  color: $hover;
+  }
+
+}
+
+@mixin laptopMQ {
+  @media (max-width:1334px) {
+    @content;
+  }
+}
+
+@mixin w950MQ {
+  @media (max-width:950px) {
+    @content;
+  }
+}
+
+@mixin tabletMQ {
+  @media (max-width:1024px) {
+    @content;
+  }
+}
+
+@mixin tabletpMQ {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobileMQ {
+  @media (max-width:640px) {
+    @content;
+  }
+}

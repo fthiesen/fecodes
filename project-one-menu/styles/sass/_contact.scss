@@ -1,0 +1,123 @@
+.contact {
+
+  header {
+
+    @include header('../assets/contact-header.jpg');
+
+    h1 {
+      @include heading(white);
+      margin: 12vh 0 0 0;
+      height: 35vh;
+    }
+
+  }
+
+  main {
+
+    .wrapper {
+
+      justify-content: space-between;
+
+      @include tabletpMQ {
+        flex-direction: column;
+        align-items: center;
+      }
+
+    }
+
+    .contact-info {
+      width: 30%;
+      padding: 30px;
+
+      @include tabletMQ {
+        padding: 30px 0 70px 15px;
+      }
+
+      @include tabletpMQ {
+        order: 1;
+        width: 100%;
+        margin-top: -150px;
+        padding: 30px 15px 70px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @include mobileMQ {
+        flex-direction: column;
+        padding: 40px 15px 70px 30px ;
+      }
+
+      .social-media {
+
+        margin: 20px 0 20px -10px;
+
+        li {
+          text-align: center;
+          width: 20%;
+          max-width: 40px;
+          display: inline-block;
+          font-size: 2.5rem;
+        }
+
+        a {
+          padding: 3px;
+        }
+
+        a:focus,
+        a:hover {
+          color: black
+        }
+
+      } 
+      // end of social media
+
+      .address {
+
+        margin-top: 40px;
+
+        @include tabletpMQ {
+          margin-top: 15px;
+          order: -1;
+        }
+
+        @include mobileMQ {
+          order: unset;
+        }
+
+      }
+
+    } 
+    //end of contact info
+
+    form {
+
+      @include form($dark-blue, white, $dandelion, $dark-blue, white);
+
+      box-shadow: 15px 15px 0 $dandelion;
+      position: relative;
+      top: -150px;
+
+      @include tabletpMQ {
+        width: 100%;
+        margin-left: -15px;
+      }
+      
+      @include mobileMQ {
+        justify-content: center;
+        width: 90%;
+      }
+
+      textarea,
+      button,
+      input {
+        @include mobileMQ {
+          width: 80%;
+        }
+      }
+      
+    }
+
+  }
+  // end of main
+}
+// end of contact nest

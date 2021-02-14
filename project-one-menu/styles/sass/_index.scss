@@ -1,0 +1,328 @@
+// HEADER
+
+.home {
+
+  overflow-x: hidden;
+
+  // HEADER 
+
+  header {
+    @include header('../assets/home-header.jpg');
+    @include mobileMQ {
+      padding-top: 8px;
+    }
+    
+    .wrapper {
+      width: 100%;
+      justify-content: space-between;
+      @include mobileMQ {
+        flex-direction: column;
+      }
+    }
+
+    nav {
+      padding-left: 40px;
+      @include mobileMQ {
+        padding-left: 0;
+      }
+    }
+
+    h1 {
+      @include heading($dandelion);
+      width: 40%;
+      margin: 0;
+      padding: 0 0 40px 40px;
+      @include w950MQ {
+        width: 45%;
+        font-size: calc(1.5rem + 2.8vw);
+      }
+      @include mobileMQ {
+        width: 100%;
+        padding: 78px 20px 0 25px;
+        margin-bottom: -20px;
+        font-size: calc(2.5rem + 2.8vw);
+      }
+    }
+
+    img {
+      width: 60%;
+      position: relative;
+      right: calc(-1 * ((100vw - 1300px) / 2));
+      bottom: -100px;
+      @media (max-width: 1300px) {
+        right: 0;
+      }
+      @include w950MQ {
+        width: 55%;
+      }
+      @include mobileMQ {
+        width: 90%;
+        align-self: flex-end;
+        bottom: -50px;
+      }
+    }
+  }
+  // end of header
+
+  // MAIN STYLING
+
+  // ABOUT SECTION
+
+  .about {
+    padding: 100px 0 120px;
+  
+    @include tabletMQ {
+      padding: 120px 0;
+    }
+    @include mobileMQ {
+      padding-top: 60px;
+    }
+  
+    .flex {
+      @include tabletpMQ {
+        flex-direction: column;
+      }
+    }
+  
+    .item {
+      width: calc(50% - 20px);
+      @include tabletpMQ {
+        width: 100%;
+      }
+    }
+    
+    .item:nth-child(odd) {
+      margin-right: 10px;
+      @include tabletpMQ {
+        margin-right: 0;
+      }
+    }
+    
+    .item:nth-child(even) {
+      margin-left: 10px;
+      @include tabletpMQ {
+        margin-left: 0;
+      }
+    }
+    
+    h2 {
+      margin: 40px 0 10px;
+      @include mobileMQ {
+        font-size: 2.5rem;
+        margin-top: 40px;
+      }
+    }
+    
+    h2::before {
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      font-size: 2.5rem;
+      font-style: normal;
+      line-height: 30px;
+      text-align: center;
+      vertical-align: middle;
+      background-color: $dandelion;
+      border-radius: 50%;
+      padding: 10px;
+      margin: 0 10px 5px 0;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+    }
+    
+    .item1 h2::before {
+      content: "\f3c5";
+    }
+    
+    .item2 h2::before {
+      content: "\f0c0";
+    }
+    
+    .item3 h2::before {
+      content: "\f15b";
+    }
+    
+    .item4 h2::before {
+      content: "\f095";
+    }
+    
+    p {
+      padding-left: 62px;
+      @include mobileMQ {
+        padding-right: 10px;
+      }
+    }
+  }
+  // end of about
+    
+  // PROGRAMS SECTION
+    
+  .programs {
+    background-color: $dark-blue;
+  
+    .wrapper {
+      width: 100%;
+      justify-content: space-between;
+      @include mobileMQ {
+        flex-direction: column;
+        padding: 0 10%;
+      }
+    }
+    
+    .program {
+      width: 42%;
+      max-width: 600px;
+      margin-top: -35px;
+      @include mobileMQ {
+        width: 100%;
+      }
+      
+      img {
+        box-shadow: 12px 12px 0 $dandelion;
+        @include mobileMQ {
+          margin-left: -6px;
+        }
+      }
+      
+      img:last-child {
+        box-shadow: -12px 12px 0 $dandelion;
+        @include mobileMQ {
+          order: -1;
+          margin-left: 6px;
+        }
+      }
+  
+      p {
+        color: white;
+        margin: 10px 0;
+      }
+  
+      .program-content {
+        margin: 20% 0 10% 20%;
+        justify-content: flex-end;
+        @include tabletMQ {
+          justify-content: flex-start;
+        }
+        @include mobileMQ {
+          margin: 20% 0 30%;
+        }
+      }
+    }
+
+    .program:last-child {
+      margin-bottom: -23px;
+      margin-top: unset;
+    }
+    
+    .program:last-child .program-content {
+      margin: 20% 20% 10% 0;
+      justify-content: flex-start;
+      @include mobileMQ {
+        margin: 20% 0;
+      }
+    }
+  }
+  // end of programs
+    
+  // EXTRA SECTION
+    
+  .extra .flex {
+    padding: 15% 10% 10%;
+    justify-content: flex-start;
+  
+    h2 {
+      padding-bottom: 20px;
+    }
+  }
+  
+  // BANNER SECTION
+
+  .banner img {
+    @include mobileMQ {
+      height: 35vh;
+      object-fit: cover;
+    }
+  }
+    
+  // WIN SECTION
+  
+  .win {
+    padding: 10%;
+    @include mobileMQ {
+      padding-top: 15%;
+    }
+  
+    .flex {
+      align-items: center;
+      @include tabletMQ {
+        flex-direction: column;
+      }
+    }
+    
+    .win-content {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 70%;
+      @include laptopMQ {
+        width: 55%;
+      }
+      @include tabletMQ {
+        width: 100%;
+        align-items: center;
+      }
+      @include mobileMQ {
+        align-items: flex-start;
+      }
+    }
+    
+    .image-container {
+      width: calc(30% - 92px);
+      height: 100%;
+      margin: -12px 80px 0 -12px;
+      box-shadow: -12px 12px 0 $dandelion;
+      @include laptopMQ {
+        width: calc(45% - 62px);
+        margin-right: calc(50px - 12px);
+      }
+      @include tabletMQ {
+        margin: 0px -12px 60px 0px;
+        width: 60%;
+      }
+      @include mobileMQ {
+        width: 100%;
+      }
+    }
+    
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  // end of win
+    
+  // GALLERY SECTION
+  
+  .gallery {
+    background-color: $dark-blue;
+    padding: 6%;
+    
+    .flex {
+      justify-content: space-between;
+    }
+  
+    img {
+      width: 32%;
+      object-fit: cover;
+      @include mobileMQ {
+        width: 47%;
+      }
+    }
+  
+    img:last-child {
+      @include mobileMQ {
+        display: none;
+      }
+    }
+  }
+  // end of gallery
+}
+// end of home
