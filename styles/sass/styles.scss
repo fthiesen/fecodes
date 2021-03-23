@@ -1,0 +1,272 @@
+@import 'setup';
+
+$primary: #1223E6;
+$secondary: #09ebaf;
+$light: #F2F2F2;
+
+$text: forma-djr-micro, sans-serif;
+$heading: new-spirit, serif;
+
+$spacing: 8rem;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    line-height: 1.3em;
+    color: black;
+    background-color: $primary;
+    font-family: $text;
+}
+
+header,
+main {
+    background-color: white;
+}
+
+section {
+    padding: $spacing;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.logo {
+    font-family: $heading;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1em;
+    color: black;
+    text-align: center;
+}
+
+p:not(:last-of-type) {
+    margin-bottom: 20px ;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.logo {
+    font-family: cy,sans-serif;
+    color: $primary;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    
+    .top-bar {
+        height: 60px;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .logo {
+        font-size: 3rem;
+    }
+    
+    .content {
+        
+        height: 60vh;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+    
+        h2 {
+            font-size: 2.4rem;
+            margin-top: -5px;
+        }
+    
+        h5 {
+            font-family: $text;
+            font-size: 3rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid $primary;
+
+            .lnr-hand {
+                animation: wave 0.5s ease-in-out;
+                display: inline-block;
+                transform: rotate(-25deg);
+                transform-origin: bottom center;
+                margin-right: -5px;
+                margin-left: 5px;
+                color: $primary;
+            }
+            .lnr-hand:hover {
+                animation: wave 0.5s ease-in-out, wave2 0.5s ease-in-out;
+                color: $secondary;
+            }
+            @keyframes wave {
+                0% {
+                    transform: rotate(-25deg);
+                }
+                25% {
+
+                    transform: rotate(0);
+                }
+                50% {
+                    
+                    transform: rotate(-25deg);
+                }
+                75% {
+                    transform: rotate(0);
+
+                }
+                100% {
+                    transform: rotate(-25deg);
+
+                }
+            }
+            @keyframes wave2 {
+                0% {
+                    transform: rotate(-25deg);
+                }
+                25% {
+
+                    transform: rotate(0);
+                }
+                50% {
+                    
+                    transform: rotate(-25deg);
+                }
+                75% {
+                    transform: rotate(0);
+
+                }
+                100% {
+                    transform: rotate(-25deg);
+
+                }
+            }
+        }
+    }
+    
+}
+// end of header
+
+main {
+
+    section {
+        .wrapper {
+            display: flex;
+            .left,
+            .right {
+                flex-basis: 50%;
+            }
+            .left {
+                padding-right: 50px;
+            }
+            .right {
+                padding-left: 50px;
+            }
+            h3 {
+                margin-top: 1rem;
+            }
+        }
+    }
+    h2 {
+        font-size: 3rem;
+        margin: 1em 0;
+        text-align: left;
+    }
+    h3 {
+        font-family: $text;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: left;
+        color: $primary;
+        margin-top: 2em;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        &::after {
+            content: "";
+            display: block;
+            border-bottom: 2px solid $secondary;
+            width: 30px;
+            padding-top: 15px;
+        }
+    }
+
+    .about {
+        background: linear-gradient(-90deg, $light 65%, $primary 35%);
+        padding: 0;
+        
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            .left {
+                padding: $spacing 0;
+                flex-basis: 45%;
+                background: linear-gradient(-90deg, $light 45%, $primary 40%);
+                position: relative;
+                .name {
+                    margin-top: 5px;
+                    color: white;
+                    position: absolute;
+                    top: $spacing;
+                    left: 0;
+                    margin-left: 30px;
+                    transform: rotate(90deg);
+                    transform-origin: 0 0;
+                    white-space: nowrap;
+                }
+                img {
+                    max-width: calc(100% - 50px);
+                    margin-left: 50px;
+                }
+            }
+            .right {
+                padding: $spacing 0 $spacing 50px;
+                flex-basis: 55%;
+            }
+
+        }
+    }
+
+    .skills {
+        text-align: center;
+        h3 {
+            text-align: center;
+            margin: 0 0 2em;
+            &::after {
+                margin: 0 auto;
+            }
+        }
+        img {
+            width: 50px;
+            margin: 0 20px;
+        }
+        .landscape {
+            width: 90px;
+        }
+    }
+
+    .portfolio {
+        background: linear-gradient(-90deg, $primary 50%, $light 50%);
+    }
+}
+
+footer {
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1em;
+    text-align: center;
+    padding: 15px 20px 12px;
+}
