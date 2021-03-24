@@ -21,13 +21,13 @@ body {
     font-family: $text;
 }
 
+img {
+    width: 100%;
+}
+
 header,
 main {
     background-color: white;
-}
-
-section {
-    padding: $spacing;
 }
 
 h1,
@@ -41,7 +41,6 @@ h5,
     font-style: normal;
     line-height: 1em;
     color: black;
-    text-align: center;
 }
 
 p:not(:last-of-type) {
@@ -50,6 +49,15 @@ p:not(:last-of-type) {
 
 strong {
     font-weight: 500;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
 }
 
 .logo {
@@ -61,6 +69,34 @@ strong {
     width: 90%;
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.btn,
+button {
+    background-color: $secondary;
+    display: inline-block;
+    color: $primary;
+    font-size: 1.6rem;
+    line-height: 4.3rem;
+    height: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 1em;
+    border-radius: 4px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: 
+        background-color .2s ease-in,
+        color .2s ease-in;
+    border: none;
+    align-self: flex-start;
+    &:hover,
+    &:focus {
+        background-color: $primary;
+        color: $secondary;
+        text-decoration: none;
+    }
 }
 
 header {
@@ -91,13 +127,23 @@ header {
     
         h2 {
             font-size: 2.4rem;
-            margin-top: -5px;
+            margin: -5px 0 30px;
+        }
+        .btn {
+            background-color: $primary;
+            color: $light;
+            &:hover,
+            &:focus {
+                background-color: $secondary;
+                color: $primary;
+            }
         }
     
         h5 {
             font-family: $text;
             font-size: 3rem;
-            margin-bottom: 15px;
+            font-weight: 400;
+            margin-bottom: 20px;
             border-bottom: 2px solid $primary;
 
             .lnr-hand {
@@ -166,33 +212,28 @@ main {
     section {
         .wrapper {
             display: flex;
+            flex-wrap: wrap;
             .left,
             .right {
                 flex-basis: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
             .left {
-                padding-right: 50px;
+                padding: $spacing 50px $spacing 0;
             }
             .right {
-                padding-left: 50px;
-            }
-            h3 {
-                margin-top: 1rem;
+                padding: $spacing 0 $spacing 50px;
             }
         }
     }
-    h2 {
-        font-size: 3rem;
-        margin: 1em 0;
-        text-align: left;
-    }
-    h3 {
+    .subtitle {
         font-family: $text;
         font-weight: 600;
         text-transform: uppercase;
         text-align: left;
         color: $primary;
-        margin-top: 2em;
         font-size: 2rem;
         letter-spacing: 1px;
         &::after {
@@ -203,19 +244,23 @@ main {
             padding-top: 15px;
         }
     }
+    .title {
+        font-size: 3rem;
+        margin: 1em 0 .8em;
+        text-align: left;
+    }
 
     .about {
         background: linear-gradient(-90deg, $light 65%, $primary 35%);
-        padding: 0;
         
         .wrapper {
             display: flex;
-            justify-content: space-between;
             .left {
-                padding: $spacing 0;
                 flex-basis: 45%;
+                padding-right: 0;
                 background: linear-gradient(-90deg, $light 45%, $primary 40%);
                 position: relative;
+                justify-content: flex-start;
                 .name {
                     margin-top: 5px;
                     color: white;
@@ -233,7 +278,7 @@ main {
                 }
             }
             .right {
-                padding: $spacing 0 $spacing 50px;
+                padding-left: 50px;
                 flex-basis: 55%;
             }
 
@@ -242,7 +287,8 @@ main {
 
     .skills {
         text-align: center;
-        h3 {
+        padding: $spacing 0;
+        h2 {
             text-align: center;
             margin: 0 0 2em;
             &::after {
@@ -259,8 +305,121 @@ main {
     }
 
     .portfolio {
-        background: linear-gradient(-90deg, $primary 50%, $light 50%);
+        .title {
+            margin-bottom: 0.5em;
+        }
+        .project:nth-of-type(odd) {
+            background: linear-gradient(90deg, $light 65%, $primary 35%);
+            .wrapper {
+                .right {
+                    flex-basis: 45%;
+                    padding-left: 0;
+                    background: linear-gradient(90deg, $light 50%, $primary 50%);
+                }
+                .left {
+                    flex-basis: 55%;
+                }
+    
+            }
+        }
+        .project:nth-of-type(even) {
+            background: linear-gradient(-90deg, white 65%, $primary 35%);
+            .wrapper {
+                .left {
+                    flex-basis: 45%;
+                    padding-right: 0;
+                    background: linear-gradient(-90deg, white 50%, $primary 50%);
+                }
+                .right {
+                    background-color: white;
+                    flex-basis: 55%;
+                }
+    
+            }
+        }
     }
+
+    .education {
+        padding: $spacing 0;
+        background-color: $secondary;
+        .wrapper {
+            flex-direction: column;
+            .title {
+                font-size: 2.5rem;
+                margin-bottom: 0.4em;
+            }
+            .subtitle::after {
+                border-color: $light;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .contact {
+        padding: $spacing 0 0;
+        background-color: $light;
+        .wrapper {
+            .subtitle {
+                flex-basis: 100%;
+                text-align: center;
+            }
+            .subtitle::after {
+                margin: 0 auto;
+            }
+            .left {
+                flex-basis: 40%;
+                justify-content: flex-start;
+                h3 {
+                    margin-top: 5px;
+                }
+                ul {
+                    display: flex;
+                    margin: 20px 0 18px;
+                    svg {
+                        width: 25px;
+                        margin-right: 15px;
+                        fill: $secondary;
+                        &:hover,
+                        &:focus {
+                            fill: $primary;
+                        }
+                    }
+                }
+            }
+            .right {
+                flex-basis: 60%;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                input, 
+                textarea {
+                    font-family: $text;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    background-color: $secondary;
+                    border: none;
+                    color: $primary;
+                    border-radius: 4px;
+                    &::placeholder {
+                        opacity: 1;
+                    }
+                    &:focus {
+                        background-color: $primary;
+                        color: $light;
+                    }
+                }
+                button {
+                    font-family: $text;
+                    align-self: flex-end;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
 }
 
 footer {

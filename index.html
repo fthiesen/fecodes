@@ -23,12 +23,16 @@
                     <h5>Hi <span class="lnr lnr-hand" aria-hidden="true"></span> I'm Fern!</h5>
                     <h1>A front-end developer in Toronto</h1>
                     <h2>with experience in graphic design and marketing</h2>
+                    <div class="buttons">
+                        <a href="#about" class="btn">About me</a>
+                        <a href="#contact" class="btn">Get in touch</a>
+                    </div>
                 </div>
         </div>
     </header>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <div class="left">
                     <div class="name">
@@ -37,41 +41,124 @@
                     <img src="./assets/fthiesen.jpg" alt="A photo of Fernanda Thiesen">
                 </div>
                 <div class="right">
-                    <h3>About me</h3>
-                    <h2>Title goes here</h2>
+                    <h2 class="subtitle">About me</h2>
+                    <h3 class="title">A Juno College Bootcamp graduate</h3>
                     <p>A front-end developer who uses her curious mind, attention to detail and persistence to innovate and solve problems in order to build intuitive and accessible websites and applications.</p>
-                    <p>With 20 years of experience in working as a graphic design and marketing freelancer, I am looking  to explore new opportunities that help me grow as a developer.</p>
+                    <p>With 20 years of experience in working as a graphic design and marketing freelancer, I am looking  to explore new opportunities that can help me grow as a developer.</p>
                     <p>My background includes a Bachelor’s Degree in Social Communications and Marketing, and a technical school certificate in Advertising, having won student awards for Printing and Copywriting.</p>
                 </div>
             </div>
         </section>
         <section class="skills">
-            <h3>Skills & Portfolio</h3>
-            <img src="./assets/html-5.svg" alt="HTML logo">
-            <img src="./assets/css-3.svg" alt="CSS logo">
-            <img src="./assets/sass.svg" alt="Sass logo">
-            <img src="./assets/javascript.svg" alt="JavaScript logo">
-            <img src="./assets/jquery.svg" alt="jQuery logo" class="landscape">
-            <img src="./assets/react.svg" alt="React logo">
-            <img src="./assets/firebase.svg" alt="Firebase logo">
-            <img src="./assets/github-icon.svg" alt="Github logo">
+            <h2 class="subtitle">Skills & Portfolio</h2>
+            <img src="./assets/logos/html-5.svg" alt="HTML logo" title="HTML">
+            <img src="./assets/logos/css-3.svg" alt="CSS logo" title="CSS">
+            <img src="./assets/logos/sass.svg" alt="Sass logo" title="Sass">
+            <img src="./assets/logos/javascript.svg" alt="JavaScript logo" title="JavaScript">
+            <img src="./assets/logos/jquery.svg" alt="jQuery logo" title="jQuery" class="landscape">
+            <img src="./assets/logos/react.svg" alt="React logo" title="React">
+            <img src="./assets/logos/firebase.svg" alt="Firebase logo" title="Firebase">
+            <img src="./assets/logos/github-icon.svg" alt="Github logo" title="GitHub">
         </section>
         <section class="portfolio">
-            <div class="wrapper">
-                <div class="left">
-                    <h3>HTML, Sass, JS, React, Firebase</h3>
-                    <h2>Popsipoll</h2>
-                    An app built with React and Firebase where you can create your own poll and then share the link with anyone you’d like to take part in the poll.
+            <div class="project">
+                <div class="wrapper">
+                    <div class="left">
+                        <h3 class="subtitle">HTML, Sass, JS, React, Firebase</h3>
+                        <h2 class="title">Popsipoll</h2>
+                        <p>An app built with React and Firebase where you can create your own poll and then share the link with anyone you’d like to take part in the poll.</p>
+                        <p><a href="https://popsipoll.netlify.app/" class="btn">Live project</a><a href="https://github.com/Cam-Fernanda-Melissa-Jake-Project4/popsipoll" class="btn">GitHub</a></p>
+                    </div>
+                    <div class="right">
+                        <img src="./assets/projects/popsipoll.png" alt="Screenshot of the Popsipoll project">
+                    </div>
                 </div>
-                <div class="right">
-                    <p></p>
+            </div>
+            <div class="project">
+                <div class="wrapper">
+                    <div class="left">
+                        <img src="./assets/projects/must-watch.png" alt="Screenshot of the Must Watch project">
+                    </div>
+                    <div class="right">
+                        <h3 class="subtitle">HTML, Sass, JS, React, Firebase, API</h3>
+                        <h2 class="title">Must Watch</h2>
+                        <p>A movie recommendation app built with React, Firebase and the OMDb API.</p>
+                        <p><a href="https://must-watch.netlify.app/" class="btn">Live project</a><a href="https://github.com/fthiesen/fernanda-thiesen-project-three" class="btn">GitHub</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="wrapper">
+                    <div class="left">
+                        <h3 class="subtitle">HTML, Sass, JS, API</h3>
+                        <h2 class="title">Amazed by TV</h2>
+                        <p>Amazed by TV is a one-page website created with JavaScript that connects to the TV Maze API and displays information about a chosen TV show. </p>
+                        <p><a href="https://blaire-fernanda.github.io/amazed-by-tv/" class="btn">Live project</a><a href="https://github.com/blaire-fernanda/amazed-by-tv" class="btn">GitHub</a></p>
+                    </div>
+                    <div class="right">
+                        <img src="./assets/projects/amazed-by-tv.png" alt="Screenshot of the Amazed by TV project">
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="wrapper">
+                    <div class="left">
+                        <img src="./assets/projects/lotr-quotes.png" alt="Screenshot of the Lord of the Rings Quotes project">
+                    </div>
+                    <div class="right">
+                        <h3 class="subtitle">HTML, CSS, JS, API</h3>
+                        <h2 class="title">The Lord of the Rings Quotes</h2>
+                        <p>A one page website that connects to The One Api and displays quotes from the Lord of The Rings movies.</p>
+                        <p><a href="https://fthiesen.github.io/lord-of-the-rings-quotes/" class="btn">Live project</a><a href="https://github.com/fthiesen/lord-of-the-rings-quotes" class="btn">GitHub</a></p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="education">
             <div class="wrapper">
-                <h2>Education</h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita harum nostrum ea, obcaecati repudiandae eius nihil consequatur voluptatem earum id neque dolorum beatae dicta autem accusantium placeat mollitia doloremque?
+                <h2 class="subtitle">Education</h2>
+                <h3 class="title">Juno College Certificate (2020-2021)</h3>
+                <ul>
+                    <li>Web Development Immersive Bootcamp</li>
+                    <li>Intro JavaScript Fundamentals</li>
+                    <li>Intro to Web Development</li>
+                </ul>
+                <h3 class="title">Bachelor’s Degree in Social Communications and Marketing (2001)</h3>
+                <p>FACHA - Faculdades Integradas Hélio Alonso, Brazil</p>
+                <h3 class="title">Technical School Certificate in Advertising (1997)</h3>
+                <p>ETEC - Escola Técnica de Comunicação, Brazil</p>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="wrapper">
+                <h2 class="subtitle">Contact</h2>
+                <div class="left">
+                    <h3 class="title">Get in touch</h3>
+                    <p><a href="mailto:fcthiesen@gmail.com">fcthiesen@gmail.com</a></p>
+                    <ul>
+                        <li><a href="https://github.com/fthiesen/">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a></li>
+                        <li><a href="https://www.linkedin.com/in/fernanda-thiesen/">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a></li>
+                        <li><a href="https://twitter.com/fcthiesen">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a></li>
+                    </ul>
+                    <a href="./assets/fernanda-thiesen-resume.pdf" class="btn">Download Resume (PDF)</a>
+                </div>
+                <div class="right">
+                    <form netlify>
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                        <button>Say hi</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
