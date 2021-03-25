@@ -222,6 +222,7 @@ body {
   color: black;
   background-color: #1223E6;
   font-family: forma-djr-micro, sans-serif;
+  overflow-x: hidden;
 }
 
 img {
@@ -407,6 +408,8 @@ header .content h5 {
 header .content h5 .lnr-hand {
   -webkit-animation: wave 0.5s ease-in-out;
           animation: wave 0.5s ease-in-out;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
   display: inline-block;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
@@ -677,40 +680,102 @@ main .about .wrapper .right {
 
 main .skills {
   text-align: center;
-  padding: 8rem 0;
+  padding: 8rem 0 6rem;
+  background-color: #09ebaf;
 }
 
 @media (max-width: 710px) {
   main .skills {
-    padding: 5rem 0;
+    padding: 5rem 0 2.5rem;
   }
 }
 
-main .skills h2 {
+main .skills .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 710px) {
+  main .skills .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+main .skills .wrapper h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   text-align: center;
   margin: 0 0 2em;
 }
 
-main .skills h2::after {
+main .skills .wrapper h2::after {
   margin: 0 auto;
+  border-color: #F2F2F2;
 }
 
-main .skills img {
-  width: 50px;
-  margin: 0 20px;
+main .skills .wrapper .skill {
+  background-color: #1223E6;
+  padding: 1em 1em 0.8em;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: -webkit-transform .3s ease-out;
   transition: -webkit-transform .3s ease-out;
   transition: transform .3s ease-out;
   transition: transform .3s ease-out, -webkit-transform .3s ease-out;
 }
 
-main .skills img:hover, main .skills imgfocus {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+main .skills .wrapper .skill:hover, main .skills .wrapper .skillfocus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-main .skills .landscape {
-  width: 90px;
+main .skills .wrapper .skill svg {
+  height: 50px;
+  fill: #F2F2F2;
+}
+
+main .skills .wrapper .skill h4 {
+  font-family: forma-djr-micro, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #09ebaf;
+}
+
+@media (max-width: 710px) {
+  main .skills .wrapper .skill {
+    margin: 0 10px 20px;
+  }
+}
+
+main .skills .wrapper .skill:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+@media (max-width: 710px) {
+  main .skills .wrapper .skill:not(:last-of-type) {
+    margin: 0 10px 20px;
+  }
 }
 
 main .portfolio .title {
