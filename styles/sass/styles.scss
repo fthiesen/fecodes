@@ -1,13 +1,6 @@
 @import 'setup';
-
-$primary: #1223E6;
-$secondary: #09ebaf;
-$light: #F2F2F2;
-
-$text: forma-djr-micro, sans-serif;
-$heading: new-spirit, serif;
-
-$spacing: 8rem;
+@import 'variables';
+@import 'mixins';
 
 html {
     font-size: 62.5%;
@@ -52,12 +45,15 @@ strong {
 }
 
 a {
+
     color: $primary;
     text-decoration: none;
+
     &:hover,
     &:focus {
         text-decoration: underline;
     }
+
 }
 
 .logo {
@@ -73,16 +69,17 @@ a {
 
 .btn,
 button {
+
     background-color: $secondary;
     display: inline-block;
     color: $primary;
     font-size: 1.6rem;
-    line-height: 4.3rem;
-    height: 4rem;
+    line-height: 1.6rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 0 1em;
+    padding: 1.7rem 1.5em 1.5rem;
+    text-align: center;
     border-radius: 4px;
     margin-right: 20px;
     text-decoration: none;
@@ -91,20 +88,34 @@ button {
         color .2s ease-in;
     border: none;
     align-self: flex-start;
+
     &:hover,
     &:focus {
         background-color: $primary;
         color: $secondary;
         text-decoration: none;
     }
+
+    @include mobile {
+        padding: 1.5rem 1.3em 1.3rem;
+        margin: 0 10px
+    }
+
 }
 
 header {
     
     .top-bar {
+
         height: 60px;
         display: flex;
         align-items: flex-end;
+        margin-bottom: 10px;
+
+        @include mobile {
+            height: 50px;
+        }
+
     }
     
     .logo {
@@ -113,33 +124,48 @@ header {
     
     .content {
         
-        height: 60vh;
-        padding-bottom: 50px;
+        padding: 18vh 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
+        @include mobile {
+            padding: $spacing 0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+
         h1 {
             font-size: 4rem;
             margin-bottom: 15px;
+            text-align: center;
         }
     
         h2 {
             font-size: 2.4rem;
             margin: -5px 0 30px;
+            text-align: center;
         }
+
         .btn {
+
             background-color: $primary;
             color: $light;
+
             &:hover,
             &:focus {
                 background-color: $secondary;
                 color: $primary;
             }
+
         }
     
         h5 {
+
             font-family: $text;
             font-size: 3rem;
             font-weight: 400;
@@ -155,10 +181,12 @@ header {
                 margin-left: 5px;
                 color: $primary;
             }
+
             .lnr-hand:hover {
                 animation: wave 0.5s ease-in-out, wave2 0.5s ease-in-out;
                 color: $secondary;
             }
+
             @keyframes wave {
                 0% {
                     transform: rotate(-25deg);
@@ -180,6 +208,7 @@ header {
 
                 }
             }
+
             @keyframes wave2 {
                 0% {
                     transform: rotate(-25deg);
@@ -201,8 +230,11 @@ header {
 
                 }
             }
+
         }
+        // end of h5 and animation
     }
+    // end of content
     
 }
 // end of header
@@ -210,9 +242,17 @@ header {
 main {
 
     section {
+
         .wrapper {
+
             display: flex;
             flex-wrap: wrap;
+
+            @include mobile {
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+
             .left,
             .right {
                 flex-basis: 50%;
@@ -220,15 +260,34 @@ main {
                 flex-direction: column;
                 justify-content: center;
             }
+
             .left {
+
                 padding: $spacing 50px $spacing 0;
+
+                @include mobile {
+                    padding: $spacing-mobile 0;
+                }
             }
+
             .right {
+
                 padding: $spacing 0 $spacing 50px;
+
+                @include mobile {
+                    padding: $spacing-mobile 0;
+                }
+
             }
+
         }
+        // end of wrapper
+
     }
+    // end of section
+
     .subtitle {
+
         font-family: $text;
         font-weight: 600;
         text-transform: uppercase;
@@ -236,6 +295,7 @@ main {
         color: $primary;
         font-size: 2rem;
         letter-spacing: 1px;
+
         &::after {
             content: "";
             display: block;
@@ -243,7 +303,9 @@ main {
             width: 30px;
             padding-top: 15px;
         }
+
     }
+
     .title {
         font-size: 3rem;
         margin: 1em 0 .8em;
@@ -251,17 +313,31 @@ main {
     }
 
     .about {
+
         background: linear-gradient(-90deg, $light 65%, $primary 35%);
+
+        @include mobile {
+            background: linear-gradient(-360deg, $light 70%, $primary 30%);
+        }
         
         .wrapper {
+
             display: flex;
+
             .left {
+
                 flex-basis: 45%;
                 padding-right: 0;
                 background: linear-gradient(-90deg, $light 45%, $primary 40%);
                 position: relative;
                 justify-content: flex-start;
+
+                @include mobile {
+                    background: unset;
+                }
+
                 .name {
+
                     margin-top: 5px;
                     color: white;
                     position: absolute;
@@ -271,23 +347,47 @@ main {
                     transform: rotate(90deg);
                     transform-origin: 0 0;
                     white-space: nowrap;
+
+                    @include mobile {
+                        font-size: 1.6rem;
+                        top: $spacing-mobile;
+                    }
+
                 }
+
                 img {
+
                     max-width: calc(100% - 50px);
                     margin-left: 50px;
+
+                    @include mobile {
+                        max-width: calc(100% - 40px);
+                        margin-left: 40px;
+                    }
+
                 }
             }
+
             .right {
                 padding-left: 50px;
                 flex-basis: 55%;
+                @include mobile {
+                    padding: 0 0 $spacing-mobile;
+                }
             }
 
         }
     }
 
     .skills {
+
         text-align: center;
         padding: $spacing 0;
+
+        @include mobile {
+            padding: $spacing-mobile 0;
+        }
+
         h2 {
             text-align: center;
             margin: 0 0 2em;
@@ -295,107 +395,206 @@ main {
                 margin: 0 auto;
             }
         }
+
         img {
             width: 50px;
             margin: 0 20px;
         }
+
         .landscape {
             width: 90px;
         }
+
     }
+    // end of skills
 
     .portfolio {
+
         .title {
             margin-bottom: 0.5em;
         }
+
+        img {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease-in-out;
+            &:hover {
+                filter: none;
+            }
+        }
+
         .project:nth-of-type(odd) {
+
             background: linear-gradient(90deg, $light 65%, $primary 35%);
+            
+            @include mobile {
+                background: linear-gradient(360deg, $light 75%, $primary 25%);
+            }
+
             .wrapper {
+
                 .right {
                     flex-basis: 45%;
                     padding-left: 0;
                     background: linear-gradient(90deg, $light 50%, $primary 50%);
+                    @include mobile {
+                        order: -1;
+                        background: none;
+                    }
                 }
+
                 .left {
                     flex-basis: 55%;
+                    @include mobile {
+                        padding-top: 0;
+                    }
                 }
-    
+
             }
+
         }
         .project:nth-of-type(even) {
+
             background: linear-gradient(-90deg, white 65%, $primary 35%);
+            
+            @include mobile {
+                background: linear-gradient(-360deg, white 75%, $primary 25%);
+            }
+
             .wrapper {
+
                 .left {
                     flex-basis: 45%;
                     padding-right: 0;
                     background: linear-gradient(-90deg, white 50%, $primary 50%);
+                    @include mobile {
+                        background: none;
+                    }
                 }
+
                 .right {
                     background-color: white;
                     flex-basis: 55%;
+                    @include mobile {
+                        padding-top: 0;
+                    }
                 }
-    
+
             }
+
         }
     }
+    // end of portfolio
 
     .education {
+
         padding: $spacing 0;
         background-color: $secondary;
+
+        @include mobile {
+            padding: $spacing-mobile 0;
+        }
+
         .wrapper {
+
             flex-direction: column;
+
             .title {
                 font-size: 2.5rem;
                 margin-bottom: 0.4em;
             }
+
             .subtitle::after {
                 border-color: $light;
             }
+            
             p {
                 margin-bottom: 0;
             }
+
         }
+
     }
+    // end of education
 
     .contact {
+
         padding: $spacing 0 0;
         background-color: $light;
+
+        @include mobile {
+            padding: $spacing-mobile 0;
+        }
+
         .wrapper {
+
             .subtitle {
                 flex-basis: 100%;
                 text-align: center;
             }
+            
             .subtitle::after {
                 margin: 0 auto;
             }
+
+            .btn {
+                @include mobile {
+                    margin: 0;
+                }
+            }
+
             .left {
+
                 flex-basis: 40%;
                 justify-content: flex-start;
+
+                @include mobile {
+                    padding: $spacing-mobile 0;
+                }
+
                 h3 {
                     margin-top: 5px;
                 }
+
                 ul {
+
                     display: flex;
                     margin: 20px 0 18px;
+
                     svg {
+
                         width: 25px;
                         margin-right: 15px;
                         fill: $secondary;
+
                         &:hover,
                         &:focus {
                             fill: $primary;
                         }
+
                     }
+
                 }
+
             }
+
             .right {
+
                 flex-basis: 60%;
+
+                @include mobile {
+                    padding: 0;
+                }
+
             }
+
             form {
+
                 display: flex;
                 flex-direction: column;
+
                 input, 
                 textarea {
+                    
                     font-family: $text;
                     padding: 10px;
                     margin-bottom: 10px;
@@ -403,24 +602,35 @@ main {
                     border: none;
                     color: $primary;
                     border-radius: 4px;
+
                     &::placeholder {
                         opacity: 1;
                     }
+
                     &:focus {
                         background-color: $primary;
                         color: $light;
                     }
+
                 }
+
                 button {
                     font-family: $text;
                     align-self: flex-end;
                     margin: 0;
                 }
+
             }
+            // end of form
+
         }
+        // end of wrapper
+
     }
+    // end of contact
     
 }
+// end of main
 
 footer {
     color: white;
