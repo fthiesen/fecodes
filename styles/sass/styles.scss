@@ -78,16 +78,19 @@ button {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 1.7rem 1.5em 1.5rem;
+    padding: 1.8rem 1.5em 1.5rem;
     text-align: center;
     border-radius: 4px;
-    margin-right: 20px;
     text-decoration: none;
     transition: 
         background-color .2s ease-in,
         color .2s ease-in;
     border: none;
     align-self: flex-start;
+
+    &:not(:first-of-type) {
+        margin-left: 20px;
+    }    
 
     &:hover,
     &:focus {
@@ -96,9 +99,26 @@ button {
         text-decoration: none;
     }
 
+    &:active {
+        position: relative;
+        top: 2px;
+    }
+
     @include mobile {
         padding: 1.5rem 1.3em 1.3rem;
-        margin: 0 10px
+    }
+
+}
+
+.btn2 {
+
+    background-color: $primary;
+    color: $light;
+
+    &:hover,
+    &:focus {
+        background-color: $secondary;
+        color: $primary;
     }
 
 }
@@ -149,19 +169,6 @@ header {
             font-size: 2.4rem;
             margin: -5px 0 30px;
             text-align: center;
-        }
-
-        .btn {
-
-            background-color: $primary;
-            color: $light;
-
-            &:hover,
-            &:focus {
-                background-color: $secondary;
-                color: $primary;
-            }
-
         }
     
         h5 {
@@ -399,6 +406,11 @@ main {
         img {
             width: 50px;
             margin: 0 20px;
+            transition: transform .3s ease-out;
+            &:hover,
+            &focus {
+                transform: scale(1.2);
+            }
         }
 
         .landscape {
@@ -420,6 +432,13 @@ main {
             &:hover {
                 filter: none;
             }
+            @include mobile {
+                filter: none;
+            }
+        }
+
+        .buttons {
+            margin-top: 16px;
         }
 
         .project:nth-of-type(odd) {
@@ -536,24 +555,29 @@ main {
                 margin: 0 auto;
             }
 
+            h3 {
+                flex-basis: 100%;
+                margin: 1em 0 5px;
+                text-align: center;
+            }
+
             .btn {
                 @include mobile {
                     margin: 0;
+                    align-self: unset;
                 }
             }
 
             .left {
 
-                flex-basis: 40%;
+                flex-basis: 45%;
                 justify-content: flex-start;
 
                 @include mobile {
                     padding: $spacing-mobile 0;
+                    align-items: center;
                 }
 
-                h3 {
-                    margin-top: 5px;
-                }
 
                 ul {
 
@@ -579,7 +603,7 @@ main {
 
             .right {
 
-                flex-basis: 60%;
+                flex-basis: 55%;
 
                 @include mobile {
                     padding: 0;
@@ -596,7 +620,7 @@ main {
                 textarea {
                     
                     font-family: $text;
-                    padding: 10px;
+                    padding: 16px;
                     margin-bottom: 10px;
                     background-color: $secondary;
                     border: none;
@@ -612,6 +636,10 @@ main {
                         color: $light;
                     }
 
+                }
+
+                textarea {
+                    height: 200px;
                 }
 
                 button {

@@ -24,8 +24,8 @@
                     <h1>A front-end developer in Toronto</h1>
                     <h2>with experience in graphic design and marketing</h2>
                     <div class="buttons">
-                        <a href="#about" class="btn">About me</a>
-                        <a href="#contact" class="btn">Get in touch</a>
+                        <a href="#about" class="btn btn2">About me</a>
+                        <a href="#contact" class="btn btn2">Get in touch</a>
                     </div>
                 </div>
         </div>
@@ -43,7 +43,7 @@
                 <div class="right">
                     <h2 class="subtitle">About me</h2>
                     <h3 class="title">A Juno College Bootcamp graduate</h3>
-                    <p>I use curious mind, attention to detail and persistence to innovate and solve problems in order to build intuitive and accessible websites and applications.</p>
+                    <p>I use my curious mind, attention to detail and persistence to innovate and solve problems in order to build intuitive and accessible websites and applications.</p>
                     <p>With 20 years of experience in working as a graphic design and marketing freelancer, I am looking  to explore new opportunities that can help me grow as a developer.</p>
                     <p>My background includes a Bachelor’s Degree in Social Communications and Marketing, and a technical school certificate in Advertising, having won student awards for Printing and Copywriting.</p>
                 </div>
@@ -66,8 +66,8 @@
                     <div class="left">
                         <h3 class="subtitle">HTML, Sass, JS, React, Firebase</h3>
                         <h2 class="title">Popsipoll</h2>
-                        <p>An app built with React and Firebase where you can create your own poll and then share the link with anyone you’d like to take part in the poll. A group project developed by me, <a href="https://camduffin.com/">Cam</a>, <a href="https://jakeisbaek.com/">Jake</a> and <a href="https://melissalocquiao.com/">Melissa</a>.</p>
-                        <p><a href="https://popsipoll.netlify.app/" class="btn">Live project</a><a href="https://github.com/Cam-Fernanda-Melissa-Jake-Project4/popsipoll" class="btn">GitHub</a></p>
+                        <p>An app built with React and Firebase where you can create your own poll and then share the link with anyone you’d like to take part in the poll. A group project developed with <a href="https://camduffin.com/">Cam</a>, <a href="https://jakeisbaek.com/">Jake</a> and <a href="https://melissalocquiao.com/">Melissa</a>.</p>
+                        <div class="buttons"><a href="https://popsipoll.netlify.app/" class="btn">Live project</a><a href="https://github.com/Cam-Fernanda-Melissa-Jake-Project4/popsipoll" class="btn">GitHub</a></div>
                     </div>
                     <div class="right">
                         <img src="./assets/projects/popsipoll.png" alt="Screenshot of the Popsipoll project">
@@ -83,7 +83,7 @@
                         <h3 class="subtitle">HTML, Sass, JS, React, Firebase, API</h3>
                         <h2 class="title">Must Watch</h2>
                         <p>A movie recommendation app built with React, Firebase and the OMDb API.</p>
-                        <p><a href="https://must-watch.netlify.app/" class="btn">Live project</a><a href="https://github.com/fthiesen/fernanda-thiesen-project-three" class="btn">GitHub</a></p>
+                        <div class="buttons"><a href="https://must-watch.netlify.app/" class="btn">Live project</a><a href="https://github.com/fthiesen/fernanda-thiesen-project-three" class="btn">GitHub</a></div>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                         <h3 class="subtitle">HTML, Sass, JS, API</h3>
                         <h2 class="title">Amazed by TV</h2>
                         <p>Amazed by TV is a one-page website created with JavaScript that connects to the TV Maze API and displays information about a chosen TV show. Pair programmed with <a href="https://blairecodes.com/">Blaire</a>.</p>
-                        <p><a href="https://blaire-fernanda.github.io/amazed-by-tv/" class="btn">Live project</a><a href="https://github.com/blaire-fernanda/amazed-by-tv" class="btn">GitHub</a></p>
+                        <div class="buttons"><a href="https://blaire-fernanda.github.io/amazed-by-tv/" class="btn">Live project</a><a href="https://github.com/blaire-fernanda/amazed-by-tv" class="btn">GitHub</a></div>
                     </div>
                     <div class="right">
                         <img src="./assets/projects/amazed-by-tv.png" alt="Screenshot of the Amazed by TV project">
@@ -109,7 +109,7 @@
                         <h3 class="subtitle">HTML, CSS, JS, API</h3>
                         <h2 class="title">The Lord of the Rings Quotes</h2>
                         <p>A one page website that connects to The One Api and displays quotes from the Lord of The Rings movies.</p>
-                        <p><a href="https://fthiesen.github.io/lord-of-the-rings-quotes/" class="btn">Live project</a><a href="https://github.com/fthiesen/lord-of-the-rings-quotes" class="btn">GitHub</a></p>
+                        <div class="buttons"><a href="https://fthiesen.github.io/lord-of-the-rings-quotes/" class="btn">Live project</a><a href="https://github.com/fthiesen/lord-of-the-rings-quotes" class="btn">GitHub</a></div>
                     </div>
                 </div>
             </div>
@@ -132,8 +132,8 @@
         <section class="contact" id="contact">
             <div class="wrapper">
                 <h2 class="subtitle">Contact</h2>
+                <h3 class="title">Get in touch</h3>
                 <div class="left">
-                    <h3 class="title">Get in touch</h3>
                     <p><a href="mailto:fcthiesen@gmail.com">fcthiesen@gmail.com</a></p>
                     <ul>
                         <li><a href="https://github.com/fthiesen/">
@@ -155,8 +155,8 @@
                         <label for="email" class="sr-only">Email</label>
                         <input type="email" id="email" name="email" placeholder="Email" required>
                         <label for="message" class="sr-only">Message</label>
-                        <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
-                        <button>Say hi</button>
+                        <textarea name="message" id="message" placeholder="Message" maxlength="500"></textarea>
+                        <button class="btn2">Say hi</button>
                     </form>
                 </div>
             </div>
@@ -164,7 +164,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2020-<span class="current-year">2021</span> - Fernanda Thiesen</p>
+        <p>&copy; 2020-<span class="current-year">2021</span> — Fernanda Thiesen</p>
     </footer>
     
     <script src="script.js"></script>
