@@ -57,11 +57,6 @@ a {
 
 }
 
-.logo {
-    font-family: cy,sans-serif;
-    color: $primary;
-}
-
 .wrapper {
     width: 90%;
     max-width: 1140px;
@@ -141,6 +136,8 @@ header {
     
     .logo {
         font-size: 3rem;
+        font-family: cy,sans-serif;
+        color: $primary;
     }
     
     .content {
@@ -435,7 +432,7 @@ main {
     
                 svg {        
                     height: 50px;
-                    fill: $light;
+                    fill: white;
                 }
                 
                 h4 {

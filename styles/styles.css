@@ -264,11 +264,6 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-.logo {
-  font-family: cy,sans-serif;
-  color: #1223E6;
-}
-
 .wrapper {
   width: 90%;
   max-width: 1140px;
@@ -351,6 +346,8 @@ header .top-bar {
 
 header .logo {
   font-size: 3rem;
+  font-family: cy,sans-serif;
+  color: #1223E6;
 }
 
 header .content {
@@ -750,7 +747,7 @@ main .skills .wrapper .skill:hover, main .skills .wrapper .skillfocus {
 
 main .skills .wrapper .skill svg {
   height: 50px;
-  fill: #F2F2F2;
+  fill: white;
 }
 
 main .skills .wrapper .skill h4 {
