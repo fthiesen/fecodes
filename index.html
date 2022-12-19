@@ -622,13 +622,14 @@
 		</main>
 
 		<footer>
-			<p>&copy; 2020-<span class="current-year">2021</span> — Fernanda Thiesen</p>
+			<p>&copy; 2021-<span id="current-year" class="current-year">2021</span> — Fernanda Thiesen</p>
 		</footer>
 
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 			AOS.init()
-		</script>
+			const datetime = new Date().getFullYear()
+			document.getElementById("current-year").textContent = datetime</script>
 	</body>
 </html>
 <!-- Mockups by https://mockuphone.com/ 1.6 aspect ratio -->
