@@ -755,17 +755,17 @@ main .portfolio img:hover {
 main .portfolio .buttons {
   margin-top: 16px;
 }
-main .portfolio .project:nth-of-type(odd) {
+main .portfolio .project:nth-of-type(even) {
   background: -webkit-gradient(linear, left top, right top, color-stop(65%, #F2F2F2), color-stop(35%, #1223E6));
   background: linear-gradient(90deg, #F2F2F2 65%, #1223E6 35%);
 }
 @media (max-width: 710px) {
-  main .portfolio .project:nth-of-type(odd) {
+  main .portfolio .project:nth-of-type(even) {
     background: -webkit-gradient(linear, left bottom, left top, color-stop(75%, #F2F2F2), color-stop(25%, #1223E6));
     background: linear-gradient(360deg, #F2F2F2 75%, #1223E6 25%);
   }
 }
-main .portfolio .project:nth-of-type(odd) .wrapper .right {
+main .portfolio .project:nth-of-type(even) .wrapper .right {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   padding-left: 0;
@@ -773,33 +773,33 @@ main .portfolio .project:nth-of-type(odd) .wrapper .right {
   background: linear-gradient(90deg, #F2F2F2 50%, #1223E6 50%);
 }
 @media (max-width: 710px) {
-  main .portfolio .project:nth-of-type(odd) .wrapper .right {
+  main .portfolio .project:nth-of-type(even) .wrapper .right {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
     background: none;
   }
 }
-main .portfolio .project:nth-of-type(odd) .wrapper .left {
+main .portfolio .project:nth-of-type(even) .wrapper .left {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
 }
 @media (max-width: 710px) {
-  main .portfolio .project:nth-of-type(odd) .wrapper .left {
+  main .portfolio .project:nth-of-type(even) .wrapper .left {
     padding-top: 0;
   }
 }
-main .portfolio .project:nth-of-type(even) {
+main .portfolio .project:nth-of-type(odd) {
   background: -webkit-gradient(linear, right top, left top, color-stop(65%, white), color-stop(35%, #1223E6));
   background: linear-gradient(-90deg, white 65%, #1223E6 35%);
 }
 @media (max-width: 710px) {
-  main .portfolio .project:nth-of-type(even) {
+  main .portfolio .project:nth-of-type(odd) {
     background: -webkit-gradient(linear, left bottom, left top, color-stop(75%, white), color-stop(25%, #1223E6));
     background: linear-gradient(-360deg, white 75%, #1223E6 25%);
   }
 }
-main .portfolio .project:nth-of-type(even) .wrapper .left {
+main .portfolio .project:nth-of-type(odd) .wrapper .left {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   padding-right: 0;
@@ -807,17 +807,17 @@ main .portfolio .project:nth-of-type(even) .wrapper .left {
   background: linear-gradient(-90deg, white 50%, #1223E6 50%);
 }
 @media (max-width: 710px) {
-  main .portfolio .project:nth-of-type(even) .wrapper .left {
+  main .portfolio .project:nth-of-type(odd) .wrapper .left {
     background: none;
   }
 }
-main .portfolio .project:nth-of-type(even) .wrapper .right {
+main .portfolio .project:nth-of-type(odd) .wrapper .right {
   background-color: white;
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
 }
 @media (max-width: 710px) {
-  main .portfolio .project:nth-of-type(even) .wrapper .right {
+  main .portfolio .project:nth-of-type(odd) .wrapper .right {
     padding-top: 0;
   }
 }

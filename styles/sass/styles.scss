@@ -448,7 +448,7 @@ main {
 			margin-top: 16px;
 		}
 
-		.project:nth-of-type(odd) {
+		.project:nth-of-type(even) {
 			background: linear-gradient(90deg, $light 65%, $primary 35%);
 
 			@include mobile {
@@ -474,7 +474,7 @@ main {
 				}
 			}
 		}
-		.project:nth-of-type(even) {
+		.project:nth-of-type(odd) {
 			background: linear-gradient(-90deg, white 65%, $primary 35%);
 
 			@include mobile {
