@@ -348,6 +348,12 @@ main {
 			.right {
 				padding-left: 50px;
 				flex-basis: 55%;
+
+									
+				@include tablet {
+					padding-left: 40px;
+				}
+			
 				@include mobile {
 					padding: 0 0 $spacing-mobile;
 				}
@@ -505,7 +511,7 @@ main {
 
 	.education {
 		padding: $spacing 0;
-		background-color: $secondary;
+		background-color: $primary;
 
 		@include mobile {
 			padding: $spacing-mobile 0;
@@ -519,8 +525,15 @@ main {
 				margin-bottom: 0.4em;
 			}
 
+			.subtitle {
+				color: $secondary;
+			}
 			.subtitle::after {
 				border-color: $light;
+			}
+
+			.title, p, li {
+				color: white				
 			}
 
 			p {
@@ -529,6 +542,64 @@ main {
 		}
 	}
 	// end of education
+
+	.experience {
+		background-color: $secondary;
+		
+		.wrapper {
+			
+			.columns {
+				display: flex;
+				gap: $spacing;
+				
+				@include tablet {
+					gap: $spacing-mobile;
+				}
+
+				@include mobile {
+					flex-direction: column;
+					gap: 0;
+				}
+
+				div {
+					flex: 1 1 0px;					
+
+					h4 {
+						color: $primary;
+						margin-top: 5px;
+						margin-bottom: 15px
+					}
+
+					h4 + p {
+						margin-top: 20px;
+					}
+				}
+			}
+
+			.subtitle {
+				color: $primary
+			}
+
+			.title, p, li {
+				color: black				
+			}
+
+			ul {
+				margin-top: 10px;
+				
+				li:not(:last-child) {
+					margin-bottom: 10px;
+				}
+
+				li::before {
+					content: '\2192';
+					margin-right: 10px;
+					vertical-align: 10%;
+				}
+			}
+
+		}
+	}
 
 	.contact {
 		padding: $spacing 0 0;
