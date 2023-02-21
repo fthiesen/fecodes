@@ -42,6 +42,10 @@ p:not(:last-of-type) {
 	margin-bottom: 20px;
 }
 
+.subtitle + p {
+	margin-top: 1em;
+}
+
 strong {
 	font-weight: 500;
 }
@@ -109,6 +113,14 @@ button {
 	&:focus {
 		background-color: $secondary;
 		color: $primary;
+	}
+}
+
+.btn-closer {
+	margin-bottom: 10px;
+
+	&:not(:first-of-type) {
+		margin-left: 10px;
 	}
 }
 

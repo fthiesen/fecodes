@@ -253,6 +253,10 @@ p:not(:last-of-type) {
   margin-bottom: 20px;
 }
 
+.subtitle + p {
+  margin-top: 1em;
+}
+
 strong {
   font-weight: 500;
 }
@@ -321,6 +325,13 @@ button {
 .btn2:hover, .btn2:focus {
   background-color: #09ebaf;
   color: #1223E6;
+}
+
+.btn-closer {
+  margin-bottom: 10px;
+}
+.btn-closer:not(:first-of-type) {
+  margin-left: 10px;
 }
 
 header .top-bar {
