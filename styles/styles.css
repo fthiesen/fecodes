@@ -313,7 +313,7 @@ button:active {
 }
 @media (max-width: 710px) {
   .btn,
-button {
+  button {
     padding: 1.5rem 1.3em 1.3rem;
   }
 }
@@ -748,6 +748,78 @@ main .skills .wrapper .skill:not(:last-of-type) {
     margin: 0 10px 20px;
   }
 }
+main .marquee {
+  --gap: 1rem;
+  background-color: #09ebaf;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 6px 0 0;
+  border-bottom: 1px solid #1223E6;
+  border-top: 1px solid #1223E6;
+}
+main .marquee .marquee__content {
+  margin-top: -10px;
+  font-size: 5rem;
+  line-height: 5rem;
+  color: #1223E6;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-animation: cssmarquee 60s linear infinite;
+          animation: cssmarquee 60s linear infinite;
+}
+main .marquee .marquee__content li {
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+main .marquee .marquee__content li::before {
+  content: "→";
+  margin-right: var(--gap);
+  margin-left: -1rem;
+  vertical-align: 20%;
+}
+main .marquee .marquee__content li::after {
+  content: "←";
+  margin-left: var(--gap);
+  margin-right: -1rem;
+  vertical-align: 20%;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+@-webkit-keyframes cssmarquee {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(calc(-100% - var(--gap)));
+            transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+@keyframes cssmarquee {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(calc(-100% - var(--gap)));
+            transform: translateX(calc(-100% - var(--gap)));
+  }
+}
 main .portfolio .title {
   margin-bottom: 0.5em;
 }
@@ -870,7 +942,10 @@ main .education .wrapper p {
   margin-bottom: 0;
 }
 main .experience {
-  background-color: #09ebaf;
+  background-color: #F2F2F2;
+}
+main .experience .wrapper .subtitle::after {
+  border-color: #09ebaf;
 }
 main .experience .wrapper .columns {
   display: -webkit-box;

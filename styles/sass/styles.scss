@@ -446,6 +446,65 @@ main {
 	}
 	// end of skills
 
+	.marquee {
+		--gap: 1rem;
+		background-color: $secondary;
+		position: relative;
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		user-select: none;
+		padding: 6px 0 0;
+		border-bottom: 1px solid $primary;
+		border-top: 1px solid $primary;
+		
+		.marquee__content {
+			margin-top: -10px;
+			font-size: 5rem;
+			line-height: 5rem;
+			color: $primary;
+			flex-shrink: 0;
+			display: flex;
+			justify-content: space-around;
+
+			li {
+				text-transform: uppercase;
+				white-space: nowrap;
+
+				// arrow right
+				&::before {
+					content: '\2192';
+					margin-right: var(--gap);
+					margin-left: -1rem;
+					vertical-align: 20%;
+				}
+
+				// arrow left
+				&::after {
+					content: '\2190';
+					margin-left: var(--gap);
+					margin-right: -1rem;
+					vertical-align: 20%;
+					transform: rotateY(180deg);
+
+				}
+			}
+
+
+		@include keyframes(cssmarquee) {
+			from {
+				transform: translateX(0);
+			}
+			to {
+				transform: translateX(calc(-100% - var(--gap)));
+			}
+    }
+		
+		@include animate(cssmarquee, 60s, linear, infinite);
+		}
+	}
+	// end of marquee
+
 	.portfolio {
 		.title {
 			margin-bottom: 0.5em;
@@ -556,9 +615,13 @@ main {
 	// end of education
 
 	.experience {
-		background-color: $secondary;
+		background-color: $light;
 		
 		.wrapper {
+
+			.subtitle::after {
+				border-color: $secondary;
+			}
 			
 			.columns {
 				display: flex;
