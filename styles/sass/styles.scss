@@ -71,6 +71,7 @@ button {
 	background-color: $secondary;
 	display: inline-block;
 	color: $primary;
+	border: 1px solid $primary;
 	font-size: 1.6rem;
 	line-height: 1.6rem;
 	font-weight: 500;
@@ -78,10 +79,8 @@ button {
 	letter-spacing: 1px;
 	padding: 1.8rem 1.5em 1.5rem;
 	text-align: center;
-	border-radius: 4px;
 	text-decoration: none;
 	transition: background-color 0.2s ease-in, color 0.2s ease-in;
-	border: none;
 	align-self: flex-start;
 
 	&:not(:first-of-type) {
@@ -106,8 +105,8 @@ button {
 }
 
 .btn2 {
-	background-color: $primary;
-	color: $light;
+	background-color: unset;
+	color: $primary;
 
 	&:hover,
 	&:focus {
@@ -276,7 +275,7 @@ main {
 
 	.subtitle {
 		font-family: $text;
-		font-weight: 600;
+		font-weight: 500;
 		text-transform: uppercase;
 		text-align: left;
 		color: $primary;
@@ -402,10 +401,8 @@ main {
 			}
 
 			.skill {
-				background-color: $primary;
 				padding: 1em 1em 0.8em;
 				margin-bottom: 20px;
-				border-radius: 5px;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -417,16 +414,16 @@ main {
 
 				svg {
 					height: 50px;
-					fill: white;
+					fill:$primary;
 				}
 
 				h4 {
 					font-family: $text;
-					font-size: 1.2rem;
-					letter-spacing: 2px;
+					font-size: 1.3rem;
+					letter-spacing: 1px;
 					text-transform: uppercase;
 					margin-top: 20px;
-					color: $secondary;
+					color: $primary;
 				}
 
 				@include mobile {
@@ -582,7 +579,7 @@ main {
 
 	.education {
 		padding: $spacing 0;
-		background-color: $primary;
+		background-color: $secondary;
 
 		@include mobile {
 			padding: $spacing-mobile 0;
@@ -597,14 +594,14 @@ main {
 			}
 
 			.subtitle {
-				color: $secondary;
+				color: $primary;
 			}
 			.subtitle::after {
 				border-color: $light;
 			}
 
 			.title, p, li {
-				color: white				
+				color: black				
 			}
 
 			p {
@@ -761,12 +758,12 @@ main {
 					padding: 16px;
 					margin-bottom: 10px;
 					background-color: $secondary;
-					border: none;
+					border: 1px solid $primary;
 					color: $primary;
-					border-radius: 4px;
 
 					&::placeholder {
-						opacity: 1;
+						color: $primary;
+						opacity: 0.3;
 					}
 
 					&:focus {

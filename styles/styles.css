@@ -280,6 +280,7 @@ button {
   background-color: #09ebaf;
   display: inline-block;
   color: #1223E6;
+  border: 1px solid #1223E6;
   font-size: 1.6rem;
   line-height: 1.6rem;
   font-weight: 500;
@@ -287,11 +288,9 @@ button {
   letter-spacing: 1px;
   padding: 1.8rem 1.5em 1.5rem;
   text-align: center;
-  border-radius: 4px;
   text-decoration: none;
   -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
-  border: none;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -319,8 +318,8 @@ button:active {
 }
 
 .btn2 {
-  background-color: #1223E6;
-  color: #F2F2F2;
+  background-color: unset;
+  color: #1223E6;
 }
 .btn2:hover, .btn2:focus {
   background-color: #09ebaf;
@@ -558,7 +557,7 @@ main section .wrapper .right {
 }
 main .subtitle {
   font-family: forma-djr-micro, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: left;
   color: #1223E6;
@@ -700,10 +699,8 @@ main .skills .wrapper h2::after {
   border-color: #F2F2F2;
 }
 main .skills .wrapper .skill {
-  background-color: #1223E6;
   padding: 1em 1em 0.8em;
   margin-bottom: 20px;
-  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,15 +722,15 @@ main .skills .wrapper .skill:hover, main .skills .wrapper .skillfocus {
 }
 main .skills .wrapper .skill svg {
   height: 50px;
-  fill: white;
+  fill: #1223E6;
 }
 main .skills .wrapper .skill h4 {
   font-family: forma-djr-micro, sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 20px;
-  color: #09ebaf;
+  color: #1223E6;
 }
 @media (max-width: 710px) {
   main .skills .wrapper .skill {
@@ -912,7 +909,7 @@ main .portfolio .project:nth-of-type(odd) .wrapper .right {
 }
 main .education {
   padding: 8rem 0;
-  background-color: #1223E6;
+  background-color: #09ebaf;
 }
 @media (max-width: 710px) {
   main .education {
@@ -930,13 +927,13 @@ main .education .wrapper .title {
   margin-bottom: 0.4em;
 }
 main .education .wrapper .subtitle {
-  color: #09ebaf;
+  color: #1223E6;
 }
 main .education .wrapper .subtitle::after {
   border-color: #F2F2F2;
 }
 main .education .wrapper .title, main .education .wrapper p, main .education .wrapper li {
-  color: white;
+  color: black;
 }
 main .education .wrapper p {
   margin-bottom: 0;
@@ -1090,25 +1087,29 @@ main .contact .wrapper form textarea {
   padding: 16px;
   margin-bottom: 10px;
   background-color: #09ebaf;
-  border: none;
+  border: 1px solid #1223E6;
   color: #1223E6;
-  border-radius: 4px;
 }
 main .contact .wrapper form input::-webkit-input-placeholder, main .contact .wrapper form textarea::-webkit-input-placeholder {
-  opacity: 1;
+  color: #1223E6;
+  opacity: 0.3;
 }
 main .contact .wrapper form input::-moz-placeholder, main .contact .wrapper form textarea::-moz-placeholder {
-  opacity: 1;
+  color: #1223E6;
+  opacity: 0.3;
 }
 main .contact .wrapper form input:-ms-input-placeholder, main .contact .wrapper form textarea:-ms-input-placeholder {
-  opacity: 1;
+  color: #1223E6;
+  opacity: 0.3;
 }
 main .contact .wrapper form input::-ms-input-placeholder, main .contact .wrapper form textarea::-ms-input-placeholder {
-  opacity: 1;
+  color: #1223E6;
+  opacity: 0.3;
 }
 main .contact .wrapper form input::placeholder,
 main .contact .wrapper form textarea::placeholder {
-  opacity: 1;
+  color: #1223E6;
+  opacity: 0.3;
 }
 main .contact .wrapper form input:focus,
 main .contact .wrapper form textarea:focus {
