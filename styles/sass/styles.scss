@@ -236,6 +236,7 @@ header {
 
 main {
 	section {
+		border-top: 1px solid $primary;
 		.wrapper {
 			display: flex;
 			flex-wrap: wrap;
@@ -444,7 +445,6 @@ main {
 	// end of skills
 
 	.marquee {
-		--gap: 1rem;
 		background-color: $secondary;
 		position: relative;
 		display: flex;
@@ -452,10 +452,11 @@ main {
 		overflow: hidden;
 		user-select: none;
 		padding: 6px 0 0;
-		border-bottom: 1px solid $primary;
-		border-top: 1px solid $primary;
+		// border-bottom: 1px solid $primary;
+		// border-top: 1px solid $primary;
 		
 		.marquee__content {
+			--gap: 1rem;
 			margin-top: -10px;
 			font-size: 5rem;
 			line-height: 5rem;
@@ -483,7 +484,6 @@ main {
 					margin-right: -1rem;
 					vertical-align: 20%;
 					transform: rotateY(180deg);
-
 				}
 			}
 
@@ -493,7 +493,7 @@ main {
 				transform: translateX(0);
 			}
 			to {
-				transform: translateX(calc(-100% - var(--gap)));
+				transform: translateX(-100%);
 			}
     }
 		
@@ -507,16 +507,16 @@ main {
 			margin-bottom: 0.5em;
 		}
 
-		img {
-			filter: grayscale(100%);
-			transition: filter 0.3s ease-in-out;
-			&:hover {
-				filter: none;
-			}
-			@include mobile {
-				filter: none;
-			}
-		}
+		// img {
+		// 	filter: grayscale(100%);
+		// 	transition: filter 0.3s ease-in-out;
+		// 	&:hover {
+		// 		filter: none;
+		// 	}
+		// 	@include mobile {
+		// 		filter: none;
+		// 	}
+		// }
 
 		.buttons {
 			margin-top: 16px;
@@ -548,6 +548,11 @@ main {
 				}
 			}
 		}
+
+		.project:not(:last-child) {
+			border-bottom: 1px solid $primary;
+		}
+
 		.project:nth-of-type(odd) {
 			background: linear-gradient(-90deg, white 65%, $primary 35%);
 

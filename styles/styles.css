@@ -222,7 +222,7 @@ body {
   font-size: 2rem;
   line-height: 1.3em;
   color: black;
-  background-color: #1223E6;
+  background-color: #2E39BF;
   font-family: forma-djr-micro, sans-serif;
   overflow-x: hidden;
 }
@@ -262,7 +262,7 @@ strong {
 }
 
 a {
-  color: #1223E6;
+  color: #2E39BF;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -277,10 +277,10 @@ a:hover, a:focus {
 
 .btn,
 button {
-  background-color: #09ebaf;
+  background-color: #66ECAF;
   display: inline-block;
-  color: #1223E6;
-  border: 1px solid #1223E6;
+  color: #2E39BF;
+  border: 1px solid #2E39BF;
   font-size: 1.6rem;
   line-height: 1.6rem;
   font-weight: 500;
@@ -301,8 +301,8 @@ button:not(:first-of-type) {
 .btn:hover, .btn:focus,
 button:hover,
 button:focus {
-  background-color: #1223E6;
-  color: #09ebaf;
+  background-color: #2E39BF;
+  color: #66ECAF;
   text-decoration: none;
 }
 .btn:active,
@@ -319,11 +319,11 @@ button:active {
 
 .btn2 {
   background-color: unset;
-  color: #1223E6;
+  color: #2E39BF;
 }
 .btn2:hover, .btn2:focus {
-  background-color: #09ebaf;
-  color: #1223E6;
+  background-color: #66ECAF;
+  color: #2E39BF;
 }
 
 .btn-closer {
@@ -351,7 +351,7 @@ header .top-bar {
 header .logo {
   font-size: 3rem;
   font-family: cy, sans-serif;
-  color: #1223E6;
+  color: #2E39BF;
 }
 header .content {
   padding: 18vh 0;
@@ -397,7 +397,7 @@ header .content h5 {
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: 20px;
-  border-bottom: 2px solid #1223E6;
+  border-bottom: 2px solid #2E39BF;
 }
 header .content h5 .lnr-hand {
   -webkit-animation: wave 0.5s ease-in-out;
@@ -411,12 +411,12 @@ header .content h5 .lnr-hand {
           transform-origin: bottom center;
   margin-right: -5px;
   margin-left: 5px;
-  color: #1223E6;
+  color: #2E39BF;
 }
 header .content h5 .lnr-hand:hover {
   -webkit-animation: wave 0.5s ease-in-out, wave2 0.5s ease-in-out;
           animation: wave 0.5s ease-in-out, wave2 0.5s ease-in-out;
-  color: #09ebaf;
+  color: #66ECAF;
 }
 @-webkit-keyframes wave {
   0% {
@@ -507,6 +507,9 @@ header .content h5 .lnr-hand:hover {
   }
 }
 
+main section {
+  border-top: 1px solid #2E39BF;
+}
 main section .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,14 +563,14 @@ main .subtitle {
   font-weight: 500;
   text-transform: uppercase;
   text-align: left;
-  color: #1223E6;
+  color: #2E39BF;
   font-size: 2rem;
   letter-spacing: 1px;
 }
 main .subtitle::after {
   content: "";
   display: block;
-  border-bottom: 2px solid #09ebaf;
+  border-bottom: 2px solid #66ECAF;
   width: 30px;
   padding-top: 15px;
 }
@@ -580,19 +583,19 @@ main .title {
   main .divider {
     content: "";
     display: block;
-    border-bottom: 2px solid #1223E6;
+    border-bottom: 2px solid #2E39BF;
     width: 30px;
     margin: 0 0 5rem;
   }
 }
 main .about {
-  background: -webkit-gradient(linear, right top, left top, color-stop(65%, #F2F2F2), color-stop(35%, #1223E6));
-  background: linear-gradient(-90deg, #F2F2F2 65%, #1223E6 35%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(65%, #F2F2F2), color-stop(35%, #2E39BF));
+  background: linear-gradient(-90deg, #F2F2F2 65%, #2E39BF 35%);
 }
 @media (max-width: 710px) {
   main .about {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, #F2F2F2), color-stop(30%, #1223E6));
-    background: linear-gradient(-360deg, #F2F2F2 70%, #1223E6 30%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, #F2F2F2), color-stop(30%, #2E39BF));
+    background: linear-gradient(-360deg, #F2F2F2 70%, #2E39BF 30%);
   }
 }
 main .about .wrapper {
@@ -604,8 +607,8 @@ main .about .wrapper .left {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   padding-right: 0;
-  background: -webkit-gradient(linear, right top, left top, color-stop(45%, #F2F2F2), color-stop(40%, #1223E6));
-  background: linear-gradient(-90deg, #F2F2F2 45%, #1223E6 40%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(45%, #F2F2F2), color-stop(40%, #2E39BF));
+  background: linear-gradient(-90deg, #F2F2F2 45%, #2E39BF 40%);
   position: relative;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -663,7 +666,7 @@ main .about .wrapper .right {
 main .skills {
   text-align: center;
   padding: 8rem 0 6rem;
-  background-color: #09ebaf;
+  background-color: #66ECAF;
 }
 @media (max-width: 710px) {
   main .skills {
@@ -722,7 +725,7 @@ main .skills .wrapper .skill:hover, main .skills .wrapper .skillfocus {
 }
 main .skills .wrapper .skill svg {
   height: 50px;
-  fill: #1223E6;
+  fill: #2E39BF;
 }
 main .skills .wrapper .skill h4 {
   font-family: forma-djr-micro, sans-serif;
@@ -730,7 +733,7 @@ main .skills .wrapper .skill h4 {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 20px;
-  color: #1223E6;
+  color: #2E39BF;
 }
 @media (max-width: 710px) {
   main .skills .wrapper .skill {
@@ -746,8 +749,7 @@ main .skills .wrapper .skill:not(:last-of-type) {
   }
 }
 main .marquee {
-  --gap: 1rem;
-  background-color: #09ebaf;
+  background-color: #66ECAF;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -761,14 +763,13 @@ main .marquee {
       -ms-user-select: none;
           user-select: none;
   padding: 6px 0 0;
-  border-bottom: 1px solid #1223E6;
-  border-top: 1px solid #1223E6;
 }
 main .marquee .marquee__content {
+  --gap: 1rem;
   margin-top: -10px;
   font-size: 5rem;
   line-height: 5rem;
-  color: #1223E6;
+  color: #2E39BF;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: -webkit-box;
@@ -803,8 +804,8 @@ main .marquee .marquee__content li::after {
             transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(calc(-100% - var(--gap)));
-            transform: translateX(calc(-100% - var(--gap)));
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 @keyframes cssmarquee {
@@ -813,50 +814,32 @@ main .marquee .marquee__content li::after {
             transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(calc(-100% - var(--gap)));
-            transform: translateX(calc(-100% - var(--gap)));
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 main .portfolio .title {
   margin-bottom: 0.5em;
 }
-main .portfolio img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: -webkit-filter 0.3s ease-in-out;
-  transition: -webkit-filter 0.3s ease-in-out;
-  transition: filter 0.3s ease-in-out;
-  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
-}
-main .portfolio img:hover {
-  -webkit-filter: none;
-          filter: none;
-}
-@media (max-width: 710px) {
-  main .portfolio img {
-    -webkit-filter: none;
-            filter: none;
-  }
-}
 main .portfolio .buttons {
   margin-top: 16px;
 }
 main .portfolio .project:nth-of-type(even) {
-  background: -webkit-gradient(linear, left top, right top, color-stop(65%, #F2F2F2), color-stop(35%, #1223E6));
-  background: linear-gradient(90deg, #F2F2F2 65%, #1223E6 35%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(65%, #F2F2F2), color-stop(35%, #2E39BF));
+  background: linear-gradient(90deg, #F2F2F2 65%, #2E39BF 35%);
 }
 @media (max-width: 710px) {
   main .portfolio .project:nth-of-type(even) {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(75%, #F2F2F2), color-stop(25%, #1223E6));
-    background: linear-gradient(360deg, #F2F2F2 75%, #1223E6 25%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(75%, #F2F2F2), color-stop(25%, #2E39BF));
+    background: linear-gradient(360deg, #F2F2F2 75%, #2E39BF 25%);
   }
 }
 main .portfolio .project:nth-of-type(even) .wrapper .right {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   padding-left: 0;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #F2F2F2), color-stop(50%, #1223E6));
-  background: linear-gradient(90deg, #F2F2F2 50%, #1223E6 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #F2F2F2), color-stop(50%, #2E39BF));
+  background: linear-gradient(90deg, #F2F2F2 50%, #2E39BF 50%);
 }
 @media (max-width: 710px) {
   main .portfolio .project:nth-of-type(even) .wrapper .right {
@@ -875,22 +858,25 @@ main .portfolio .project:nth-of-type(even) .wrapper .left {
     padding-top: 0;
   }
 }
+main .portfolio .project:not(:last-child) {
+  border-bottom: 1px solid #2E39BF;
+}
 main .portfolio .project:nth-of-type(odd) {
-  background: -webkit-gradient(linear, right top, left top, color-stop(65%, white), color-stop(35%, #1223E6));
-  background: linear-gradient(-90deg, white 65%, #1223E6 35%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(65%, white), color-stop(35%, #2E39BF));
+  background: linear-gradient(-90deg, white 65%, #2E39BF 35%);
 }
 @media (max-width: 710px) {
   main .portfolio .project:nth-of-type(odd) {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(75%, white), color-stop(25%, #1223E6));
-    background: linear-gradient(-360deg, white 75%, #1223E6 25%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(75%, white), color-stop(25%, #2E39BF));
+    background: linear-gradient(-360deg, white 75%, #2E39BF 25%);
   }
 }
 main .portfolio .project:nth-of-type(odd) .wrapper .left {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   padding-right: 0;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, white), color-stop(50%, #1223E6));
-  background: linear-gradient(-90deg, white 50%, #1223E6 50%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, white), color-stop(50%, #2E39BF));
+  background: linear-gradient(-90deg, white 50%, #2E39BF 50%);
 }
 @media (max-width: 710px) {
   main .portfolio .project:nth-of-type(odd) .wrapper .left {
@@ -909,7 +895,7 @@ main .portfolio .project:nth-of-type(odd) .wrapper .right {
 }
 main .education {
   padding: 8rem 0;
-  background-color: #09ebaf;
+  background-color: #66ECAF;
 }
 @media (max-width: 710px) {
   main .education {
@@ -927,7 +913,7 @@ main .education .wrapper .title {
   margin-bottom: 0.4em;
 }
 main .education .wrapper .subtitle {
-  color: #1223E6;
+  color: #2E39BF;
 }
 main .education .wrapper .subtitle::after {
   border-color: #F2F2F2;
@@ -942,7 +928,7 @@ main .experience {
   background-color: #F2F2F2;
 }
 main .experience .wrapper .subtitle::after {
-  border-color: #09ebaf;
+  border-color: #66ECAF;
 }
 main .experience .wrapper .columns {
   display: -webkit-box;
@@ -970,7 +956,7 @@ main .experience .wrapper .columns div {
           flex: 1 1 0px;
 }
 main .experience .wrapper .columns div h4 {
-  color: #1223E6;
+  color: #2E39BF;
   margin-top: 5px;
   margin-bottom: 15px;
 }
@@ -978,7 +964,7 @@ main .experience .wrapper .columns div h4 + p {
   margin-top: 20px;
 }
 main .experience .wrapper .subtitle {
-  color: #1223E6;
+  color: #2E39BF;
 }
 main .experience .wrapper .title, main .experience .wrapper p, main .experience .wrapper li {
   color: black;
@@ -1058,10 +1044,10 @@ main .contact .wrapper .left ul {
 main .contact .wrapper .left ul svg {
   width: 25px;
   margin-right: 15px;
-  fill: #09ebaf;
+  fill: #66ECAF;
 }
 main .contact .wrapper .left ul svg:hover, main .contact .wrapper .left ul svg:focus {
-  fill: #1223E6;
+  fill: #2E39BF;
 }
 main .contact .wrapper .right {
   -ms-flex-preferred-size: 55%;
@@ -1086,34 +1072,34 @@ main .contact .wrapper form textarea {
   font-family: forma-djr-micro, sans-serif;
   padding: 16px;
   margin-bottom: 10px;
-  background-color: #09ebaf;
-  border: 1px solid #1223E6;
-  color: #1223E6;
+  background-color: #66ECAF;
+  border: 1px solid #2E39BF;
+  color: #2E39BF;
 }
 main .contact .wrapper form input::-webkit-input-placeholder, main .contact .wrapper form textarea::-webkit-input-placeholder {
-  color: #1223E6;
+  color: #2E39BF;
   opacity: 0.3;
 }
 main .contact .wrapper form input::-moz-placeholder, main .contact .wrapper form textarea::-moz-placeholder {
-  color: #1223E6;
+  color: #2E39BF;
   opacity: 0.3;
 }
 main .contact .wrapper form input:-ms-input-placeholder, main .contact .wrapper form textarea:-ms-input-placeholder {
-  color: #1223E6;
+  color: #2E39BF;
   opacity: 0.3;
 }
 main .contact .wrapper form input::-ms-input-placeholder, main .contact .wrapper form textarea::-ms-input-placeholder {
-  color: #1223E6;
+  color: #2E39BF;
   opacity: 0.3;
 }
 main .contact .wrapper form input::placeholder,
 main .contact .wrapper form textarea::placeholder {
-  color: #1223E6;
+  color: #2E39BF;
   opacity: 0.3;
 }
 main .contact .wrapper form input:focus,
 main .contact .wrapper form textarea:focus {
-  background-color: #1223E6;
+  background-color: #2E39BF;
   color: #F2F2F2;
 }
 main .contact .wrapper form textarea {
