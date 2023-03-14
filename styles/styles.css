@@ -702,7 +702,6 @@ main .skills .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow-y: scroll;
 }
 @media (max-width: 710px) {
   main .skills .wrapper {
