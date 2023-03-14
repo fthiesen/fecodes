@@ -8,7 +8,9 @@
 		<meta name="keywords" content="Frontend Web Developer, Web Designer, Toronto, Fernanda Thiesen">
 		<meta name="author" content="Fernanda Thiesen">
 		<meta property="og:image" content="./assets/fernanda-thiesen.jpg">
-		<meta property="og:image:alt" content="Fernanda Thiesen - Front-end developer with experience in graphic design and marketing">
+		<meta property="og:image:alt" content="Fernanda Thiesen - Front-end developer with experience in graphic design and marketing">		
+
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" href="https://use.typekit.net/mif6fss.css" />
 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
@@ -559,7 +561,7 @@
 					</div>
 				</div>				
 			</section>
-			<section>
+			<section class="fixme">
 				<div class="marquee">
 					<ul class="marquee__content">
 						<li>HTML</li>
@@ -763,7 +765,26 @@
 		<script>
 			AOS.init()
 			const datetime = new Date().getFullYear()
-			document.getElementById("current-year").textContent = datetime</script>
+			document.getElementById("current-year").textContent = datetime
+			
+			// fix section when it reached the top
+			var fixmeTop = $('.fixme').offset().top;
+			$(window).scroll(function() {
+					var currentScroll = $(window).scrollTop();					
+					if (currentScroll >= fixmeTop) {
+							$('.fixme').css({
+									position: 'sticky',
+									top: '0',
+									left: '0',
+									'z-index': '999'
+							});
+					} else {
+							$('.fixme').css({
+									position: 'static'
+							});
+					}
+			});
+		</script>			
 	</body>
 </html>
 <!-- Mockups by https://mockuphone.com/ 1.6 aspect ratio -->

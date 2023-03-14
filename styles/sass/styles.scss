@@ -124,6 +124,10 @@ button {
 }
 
 header {
+	z-index: -99;
+	position: sticky;
+  top: 0;
+
 	.top-bar {
 		height: 60px;
 		display: flex;
@@ -235,6 +239,16 @@ header {
 // end of header
 
 main {
+	/* make sure to cover the screen */
+  min-height: 100vh;
+
+  /* need a solid bg to hide the footer */
+  background: white;
+
+  /* put on top */
+  position: relative;
+  z-index: 1;
+
 	section {
 		border-top: 1px solid $primary;
 		.wrapper {
@@ -374,9 +388,16 @@ main {
 	}
 
 	.skills {
+		position: sticky;
+		top: 0;
+		z-index: -99;
 		text-align: center;
 		padding: $spacing 0 6rem;
 		background-color: $secondary;
+
+		max-height: 100vh;
+    max-height: 100dvh; /* iOS dynamic viewport height */
+    overflow-y: auto;
 
 		@include mobile {
 			padding: $spacing-mobile 0 2.5rem;
@@ -386,6 +407,7 @@ main {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			overflow-y: scroll;
 
 			@include mobile {
 				flex-direction: row;
@@ -452,8 +474,9 @@ main {
 		overflow: hidden;
 		user-select: none;
 		padding: 6px 0 0;
-		// border-bottom: 1px solid $primary;
+		border-bottom: 1px solid $primary;
 		// border-top: 1px solid $primary;
+		margin-bottom: -1px;
 		
 		.marquee__content {
 			--gap: 1rem;
@@ -464,6 +487,12 @@ main {
 			flex-shrink: 0;
 			display: flex;
 			justify-content: space-around;
+			
+			@include mobile {
+				margin-top: -7px;
+				font-size: 3.4rem;			
+				line-height: 3.4rem;
+			}
 
 			li {
 				text-transform: uppercase;
@@ -584,7 +613,7 @@ main {
 
 	.education {
 		padding: $spacing 0;
-		background-color: $secondary;
+		background-color: $primary;
 
 		@include mobile {
 			padding: $spacing-mobile 0;
@@ -599,17 +628,18 @@ main {
 			}
 
 			.subtitle {
-				color: $primary;
+				color: $secondary;
 			}
 			.subtitle::after {
 				border-color: $light;
 			}
 
-			.title, p, li {
-				color: black				
+			.title, p {
+				color: $secondary				
 			}
 
-			p {
+			p, li {
+				color: $light;
 				margin-bottom: 0;
 			}
 		}

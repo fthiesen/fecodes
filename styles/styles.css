@@ -333,6 +333,11 @@ button:active {
   margin-left: 10px;
 }
 
+header {
+  z-index: -99;
+  position: sticky;
+  top: 0;
+}
 header .top-bar {
   height: 60px;
   display: -webkit-box;
@@ -507,6 +512,15 @@ header .content h5 .lnr-hand:hover {
   }
 }
 
+main {
+  /* make sure to cover the screen */
+  min-height: 100vh;
+  /* need a solid bg to hide the footer */
+  background: white;
+  /* put on top */
+  position: relative;
+  z-index: 1;
+}
 main section {
   border-top: 1px solid #2E39BF;
 }
@@ -664,9 +678,15 @@ main .about .wrapper .right {
   }
 }
 main .skills {
+  position: sticky;
+  top: 0;
+  z-index: -99;
   text-align: center;
   padding: 8rem 0 6rem;
   background-color: #66ECAF;
+  max-height: 100vh;
+  max-height: 100dvh; /* iOS dynamic viewport height */
+  overflow-y: auto;
 }
 @media (max-width: 710px) {
   main .skills {
@@ -682,6 +702,7 @@ main .skills .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow-y: scroll;
 }
 @media (max-width: 710px) {
   main .skills .wrapper {
@@ -763,6 +784,8 @@ main .marquee {
       -ms-user-select: none;
           user-select: none;
   padding: 6px 0 0;
+  border-bottom: 1px solid #2E39BF;
+  margin-bottom: -1px;
 }
 main .marquee .marquee__content {
   --gap: 1rem;
@@ -779,6 +802,13 @@ main .marquee .marquee__content {
       justify-content: space-around;
   -webkit-animation: cssmarquee 60s linear infinite;
           animation: cssmarquee 60s linear infinite;
+}
+@media (max-width: 710px) {
+  main .marquee .marquee__content {
+    margin-top: -7px;
+    font-size: 3.4rem;
+    line-height: 3.4rem;
+  }
 }
 main .marquee .marquee__content li {
   text-transform: uppercase;
@@ -895,7 +925,7 @@ main .portfolio .project:nth-of-type(odd) .wrapper .right {
 }
 main .education {
   padding: 8rem 0;
-  background-color: #66ECAF;
+  background-color: #2E39BF;
 }
 @media (max-width: 710px) {
   main .education {
@@ -913,15 +943,16 @@ main .education .wrapper .title {
   margin-bottom: 0.4em;
 }
 main .education .wrapper .subtitle {
-  color: #2E39BF;
+  color: #66ECAF;
 }
 main .education .wrapper .subtitle::after {
   border-color: #F2F2F2;
 }
-main .education .wrapper .title, main .education .wrapper p, main .education .wrapper li {
-  color: black;
+main .education .wrapper .title, main .education .wrapper p {
+  color: #66ECAF;
 }
-main .education .wrapper p {
+main .education .wrapper p, main .education .wrapper li {
+  color: #F2F2F2;
   margin-bottom: 0;
 }
 main .experience {
