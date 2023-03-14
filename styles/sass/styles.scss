@@ -397,9 +397,7 @@ main {
 
 		max-height: 100vh;
     max-height: 100dvh; /* iOS dynamic viewport height */
-    overflow-y: auto;
-
-		
+    overflow-y: auto;		
 
 		@include mobile {
 			padding: $spacing-mobile 0 2.5rem;
