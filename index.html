@@ -31,13 +31,13 @@
 		<header>
 			<div class="wrapper">
 				<div class="top-bar">
-					<div class="logo">{ fê codes }</div>
+					<div class="logo" data-aos="fade" data-aos-delay="500">{ fê codes }</div>
 				</div>
 				<div class="content">
-					<h5>Hi <span class="lnr lnr-hand" aria-hidden="true"></span> I'm Fê!</h5>
-					<h1>A front-end developer in Toronto</h1>
-					<h2>with experience in graphic design and marketing</h2>
-					<div class="buttons">
+					<h5 data-aos="fade-up">Hi <span class="lnr lnr-hand" aria-hidden="true"></span> I'm Fê!</h5>
+					<h1 data-aos="fade-up" data-aos-delay="100">A front-end developer in Toronto</h1>
+					<h2 data-aos="fade-up" data-aos-delay="200">with experience in graphic design and marketing</h2>
+					<div class="buttons" data-aos="fade-up" data-aos-delay="300">
 						<a href="#about" class="btn btn2">About me</a>
 						<a href="#contact" class="btn btn2">Get in touch</a>
 					</div>
@@ -45,7 +45,7 @@
 			</div>
 		</header>
 
-		<main>
+		<main data-aos="fade" data-aos-delay="500">
 			<section class="about" id="about">
 				<div class="wrapper">
 					<div class="left">
@@ -284,7 +284,7 @@
 						<div class="left">
 							<img
 								src="./assets/projects/authentication-app.png"
-								alt="Screenshot of the Firebase Auth project"
+								alt="Screenshot of the Firebase Auth project" 
 							/>
 						</div>
 						<div class="right">
@@ -552,7 +552,7 @@
 					</div>
 				</div>				
 			</section>
-			<section class="fixme">
+			<section class="fixme" id="marquee">
 				<div class="marquee">
 					<ul class="marquee__content">
 						<li>HTML</li>
@@ -753,6 +753,7 @@
 		</footer>
 
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script data-goatcounter="https://stats.arp242.net/count" async src="//stats.arp242.net/count.js"></script>
 		<script>
 			AOS.init()
 			const datetime = new Date().getFullYear()
