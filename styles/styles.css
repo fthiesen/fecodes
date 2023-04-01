@@ -741,9 +741,12 @@ main .skills .wrapper .skill:hover, main .skills .wrapper .skillfocus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-main .skills .wrapper .skill svg {
+main .skills .wrapper .skill svg,
+main .skills .wrapper .skill img {
   height: 50px;
   fill: #2E39BF;
+  -webkit-filter: invert(33%) sepia(34%) saturate(7424%) hue-rotate(229deg) brightness(72%) contrast(111%);
+          filter: invert(33%) sepia(34%) saturate(7424%) hue-rotate(229deg) brightness(72%) contrast(111%);
 }
 main .skills .wrapper .skill h4 {
   font-family: forma-djr-micro, sans-serif;
