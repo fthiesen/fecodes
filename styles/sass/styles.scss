@@ -759,7 +759,7 @@ main {
 					// align-items: center;
 				}
 
-				ul {
+				.icons {
 					display: flex;
 					margin: 20px 0 18px;
 
@@ -769,7 +769,7 @@ main {
 						margin-right: 15px;
 						fill: $secondary;
 						filter: invert(77%) sepia(31%) saturate(612%) hue-rotate(99deg) brightness(101%) contrast(92%);
-												
+
 						&:hover,
 						&:focus {
 							fill: $primary;
