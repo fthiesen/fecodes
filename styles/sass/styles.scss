@@ -763,14 +763,17 @@ main {
 					display: flex;
 					margin: 20px 0 18px;
 
-					svg {
+					svg,
+					img {
 						width: 25px;
 						margin-right: 15px;
 						fill: $secondary;
-
+						filter: invert(77%) sepia(31%) saturate(612%) hue-rotate(99deg) brightness(101%) contrast(92%);
+												
 						&:hover,
 						&:focus {
 							fill: $primary;
+							filter: invert(33%) sepia(34%) saturate(7424%) hue-rotate(229deg) brightness(72%) contrast(111%);
 						}
 					}
 				}
