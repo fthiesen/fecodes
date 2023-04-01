@@ -1066,23 +1066,23 @@ main .contact .wrapper .left {
     padding: 2rem 0 5rem 0;
   }
 }
-main .contact .wrapper .left .icons {
+main .contact .wrapper .left ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 20px 0 18px;
 }
-main .contact .wrapper .left .icons svg,
-main .contact .wrapper .left .icons img {
+main .contact .wrapper .left ul svg,
+main .contact .wrapper .left ul img {
   width: 25px;
   margin-right: 15px;
   fill: #66ECAF;
   -webkit-filter: invert(77%) sepia(31%) saturate(612%) hue-rotate(99deg) brightness(101%) contrast(92%);
           filter: invert(77%) sepia(31%) saturate(612%) hue-rotate(99deg) brightness(101%) contrast(92%);
 }
-main .contact .wrapper .left .icons svg:hover, main .contact .wrapper .left .icons svg:focus,
-main .contact .wrapper .left .icons img:hover,
-main .contact .wrapper .left .icons img:focus {
+main .contact .wrapper .left ul svg:hover, main .contact .wrapper .left ul svg:focus,
+main .contact .wrapper .left ul img:hover,
+main .contact .wrapper .left ul img:focus {
   fill: #2E39BF;
   -webkit-filter: invert(33%) sepia(34%) saturate(7424%) hue-rotate(229deg) brightness(72%) contrast(111%);
           filter: invert(33%) sepia(34%) saturate(7424%) hue-rotate(229deg) brightness(72%) contrast(111%);
