@@ -125,8 +125,8 @@ button {
 
 header {
 	// z-index: -99;
-	position: sticky;
-  top: 0;
+	// position: sticky;
+  // top: 0;
 
 	.top-bar {
 		height: 60px;
@@ -388,9 +388,9 @@ main {
 	}
 
 	.skills {
-		position: sticky;
-		top: 0;
-		z-index: -99;
+		// position: sticky;
+		// top: 0;
+		// z-index: -99;
 		text-align: center;
 		padding: $spacing 0 6rem;
 		background-color: $secondary;

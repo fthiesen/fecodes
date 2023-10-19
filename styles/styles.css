@@ -332,10 +332,6 @@ button:active {
   margin-left: 10px;
 }
 
-header {
-  position: sticky;
-  top: 0;
-}
 header .top-bar {
   height: 60px;
   display: -webkit-box;
@@ -676,9 +672,6 @@ main .about .wrapper .right {
   }
 }
 main .skills {
-  position: sticky;
-  top: 0;
-  z-index: -99;
   text-align: center;
   padding: 8rem 0 6rem;
   background-color: #66ECAF;
