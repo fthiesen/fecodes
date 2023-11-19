@@ -10,6 +10,12 @@
   }
 }
 
+@mixin wrapper {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
 @mixin animate($animation,$duration,$method,$times){
   animation: $animation $duration $method $times;
 }
@@ -18,4 +24,10 @@
   @keyframes #{$name}{
       @content;
   }
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
