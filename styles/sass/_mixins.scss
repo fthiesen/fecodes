@@ -10,6 +10,12 @@
   }
 }
 
+@mixin wrapper {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
 @mixin animate($animation,$duration,$method,$times){
   animation: $animation $duration $method $times;
 }

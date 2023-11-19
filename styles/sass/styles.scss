@@ -863,6 +863,16 @@ footer {
 			height: 597px;
 			margin-top: 20px;
 			border: 1px solid #efefef;
+			
+			@include wrapper {
+				width: 710px;
+				height: 374px;
+			}
+			@include tablet {
+				width: 350px;
+				height: 184px;
+			}
+
 			.img {
 				position: absolute;
 				top: 0;
@@ -870,6 +880,13 @@ footer {
 				width: 100%;
 				height: 100%;
 				background-size: 1140px 100%;
+				
+				@include wrapper {
+					background-size: 710px 100%;
+				}
+				@include tablet {
+					background-size: 350px 100%;
+				}
 			}
 			.foreground-img {
 				width: 50%;
@@ -889,9 +906,16 @@ footer {
 					-webkit-appearance: none;
 					appearance: none;
 					width: 6px;
-					height: 597px;
+					height: 595px;
 					background: $primary;
 					cursor: grabbing;
+
+					@include wrapper {
+						height: 372px;
+					}
+					@include tablet {
+						height: 182px;
+					}
 				}
 			}
 			.slider-button {
