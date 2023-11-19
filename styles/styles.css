@@ -1181,6 +1181,7 @@ footer {
   width: 1140px;
   height: 597px;
   margin-top: 20px;
+  border: 1px solid #efefef;
 }
 .before-and-after div .slider-container .img {
   position: absolute;
