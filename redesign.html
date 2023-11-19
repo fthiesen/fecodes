@@ -4,8 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="AWith several years of hands-on experience, I bring a practical background in front-end development. My work is driven by curiosity, attention to detail, and persistence to innovate and tackle complex problems. With a track record of building intuitive websites and applications, I am passionate about creating seamless user experiences.">
-		<meta name="keywords" content="Frontend Web Developer, Web Designer, Toronto, Fernanda Thiesen">
+
+		<meta name="description" content="Independently redesigned the entire app utilizing Material UI styles in accordance with a newly established brand identity provided by a design agency, ensuring a seamless and consistent design throughout the app.">
+		<meta name="keywords" content="Experience with Material UI, MUI, Redesign, Frontend Web Developer">
+		<meta name="author" content="Fernanda Thiesen">
+
 		<meta name="author" content="Fernanda Thiesen">
 		<meta property="og:image" content="./assets/fernanda-thiesen.jpg">
 		<meta property="og:image:alt" content="Fernanda Thiesen - Front-end developer with experience in graphic design and marketing">		
@@ -226,13 +229,14 @@
 			const slides = [1,2,3,4,5]
 			slides.forEach(slideIndex => {
 				$(`#slider${slideIndex}`).on("input change", (e)=> {
-				const sliderPos = e.target.value;
-				$(`.img${slideIndex}`).css('width', `${sliderPos}%`)
-				$(`.slider-button${slideIndex}`).css('left', `calc(${sliderPos}% - 15px)`)
-			});
+					const sliderPos = e.target.value;
+					$(`.img${slideIndex}`).css('width', `${sliderPos}%`)
+					$(`.slider-button${slideIndex}`).css('left', `calc(${sliderPos}% - 15px)`)
+				});
 			})
 			
 		</script>			
 	</body>
 </html>
 <!-- Mockups by https://mockuphone.com/ 1.6 aspect ratio -->
+<!-- TODO: CROP AND OPTIMIZE SCREENSHOTS // MAKE IT MOBILE FRIENDLY / ADD LIGHT MODE -->
