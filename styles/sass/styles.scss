@@ -902,9 +902,27 @@ footer {
 				margin: 0;
 				transition: all .2s;
 				@include center;
-				&::-webkit-slider-thumb {
+				&::-webkit-slider-thumb{
 					-webkit-appearance: none;
 					appearance: none;
+					width: 6px;
+					height: 595px;
+					background: $primary;
+					cursor: grabbing;
+
+					@include wrapper {
+						height: 372px;
+					}
+					@include tablet {
+						height: 182px;
+					}
+				}
+				&::-moz-range-thumb {
+					-webkit-appearance: none;
+					appearance: none;
+					outline: none;
+					border-radius: 0;
+					border: none;
 					width: 6px;
 					height: 595px;
 					background: $primary;
