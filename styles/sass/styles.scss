@@ -126,7 +126,7 @@ button {
 header {
 	// z-index: -99;
 	// position: sticky;
-  // top: 0;
+	// top: 0;
 
 	.top-bar {
 		height: 60px;
@@ -240,14 +240,14 @@ header {
 
 main {
 	/* make sure to cover the screen */
-  min-height: 100vh;
+	min-height: 100vh;
 
-  /* need a solid bg to hide the footer */
-  background: white;
+	/* need a solid bg to hide the footer */
+	background: white;
 
-  /* put on top */
-  position: relative;
-  z-index: 1;
+	/* put on top */
+	position: relative;
+	z-index: 1;
 
 	section {
 		border-top: 1px solid $primary;
@@ -375,11 +375,10 @@ main {
 				padding-left: 50px;
 				flex-basis: 55%;
 
-									
 				@include tablet {
 					padding-left: 40px;
 				}
-			
+
 				@include mobile {
 					padding: 0 0 $spacing-mobile;
 				}
@@ -395,9 +394,9 @@ main {
 		padding: $spacing 0 6rem;
 		background-color: $secondary;
 
-		max-height: 100vh;
-    max-height: 100dvh; /* iOS dynamic viewport height */
-    overflow-y: auto;		
+		// max-height: 100vh;
+		// max-height: 100dvh; /* iOS dynamic viewport height */
+		// overflow-y: auto;
 
 		@include mobile {
 			padding: $spacing-mobile 0 2.5rem;
@@ -438,7 +437,8 @@ main {
 				img {
 					height: 50px;
 					fill: $primary;
-					filter: invert(33%) sepia(34%) saturate(7424%) hue-rotate(229deg) brightness(72%) contrast(111%);
+					filter: invert(33%) sepia(34%) saturate(7424%) hue-rotate(229deg) brightness(72%)
+						contrast(111%);
 				}
 
 				h4 {
@@ -478,7 +478,7 @@ main {
 		border-bottom: 1px solid $primary;
 		// border-top: 1px solid $primary;
 		margin-bottom: -1px;
-		
+
 		.marquee__content {
 			--gap: 1rem;
 			margin-top: -10px;
@@ -488,10 +488,10 @@ main {
 			flex-shrink: 0;
 			display: flex;
 			justify-content: space-around;
-			
+
 			@include mobile {
 				margin-top: -7px;
-				font-size: 3.4rem;			
+				font-size: 3.4rem;
 				line-height: 3.4rem;
 			}
 
@@ -517,17 +517,16 @@ main {
 				}
 			}
 
+			@include keyframes(cssmarquee) {
+				from {
+					transform: translateX(0);
+				}
+				to {
+					transform: translateX(-100%);
+				}
+			}
 
-		@include keyframes(cssmarquee) {
-			from {
-				transform: translateX(0);
-			}
-			to {
-				transform: translateX(-100%);
-			}
-    }
-		
-		@include animate(cssmarquee, 60s, linear, infinite);
+			@include animate(cssmarquee, 60s, linear, infinite);
 		}
 	}
 	// end of marquee
@@ -635,11 +634,13 @@ main {
 				border-color: $light;
 			}
 
-			.title, p {
-				color: $secondary				
+			.title,
+			p {
+				color: $secondary;
 			}
 
-			p, li {
+			p,
+			li {
 				color: $light;
 				margin-bottom: 0;
 			}
@@ -649,17 +650,16 @@ main {
 
 	.experience {
 		background-color: $light;
-		
-		.wrapper {
 
+		.wrapper {
 			.subtitle::after {
 				border-color: $secondary;
 			}
-			
+
 			.columns {
 				display: flex;
 				gap: $spacing;
-				
+
 				@include tablet {
 					gap: $spacing-mobile;
 				}
@@ -670,12 +670,12 @@ main {
 				}
 
 				div {
-					flex: 1 1 0px;					
+					flex: 1 1 0px;
 
 					h4 {
 						color: $primary;
 						margin-top: 5px;
-						margin-bottom: 15px
+						margin-bottom: 15px;
 					}
 
 					h4 + p {
@@ -685,16 +685,18 @@ main {
 			}
 
 			.subtitle {
-				color: $primary
+				color: $primary;
 			}
 
-			.title, p, li {
-				color: black				
+			.title,
+			p,
+			li {
+				color: black;
 			}
 
 			ul {
 				margin-top: 10px;
-				
+
 				li:not(:last-child) {
 					margin-bottom: 10px;
 				}
@@ -705,7 +707,6 @@ main {
 					vertical-align: 10%;
 				}
 			}
-
 		}
 	}
 
@@ -768,12 +769,14 @@ main {
 						width: 25px;
 						margin-right: 15px;
 						fill: $secondary;
-						filter: invert(77%) sepia(31%) saturate(612%) hue-rotate(99deg) brightness(101%) contrast(92%);
-												
+						filter: invert(77%) sepia(31%) saturate(612%) hue-rotate(99deg) brightness(101%)
+							contrast(92%);
+
 						&:hover,
 						&:focus {
 							fill: $primary;
-							filter: invert(33%) sepia(34%) saturate(7424%) hue-rotate(229deg) brightness(72%) contrast(111%);
+							filter: invert(33%) sepia(34%) saturate(7424%) hue-rotate(229deg) brightness(72%)
+								contrast(111%);
 						}
 					}
 				}
@@ -863,7 +866,7 @@ footer {
 			height: 597px;
 			margin-top: 20px;
 			border: 1px solid #efefef;
-			
+
 			@include wrapper {
 				width: 710px;
 				height: 374px;
@@ -880,7 +883,7 @@ footer {
 				width: 100%;
 				height: 100%;
 				background-size: 1140px 100%;
-				
+
 				@include wrapper {
 					background-size: 710px 100%;
 				}
@@ -900,9 +903,9 @@ footer {
 				background: none;
 				outline: none;
 				margin: 0;
-				transition: all .2s;
+				transition: all 0.2s;
 				@include center;
-				&::-webkit-slider-thumb{
+				&::-webkit-slider-thumb {
 					-webkit-appearance: none;
 					appearance: none;
 					width: 6px;
@@ -948,7 +951,7 @@ footer {
 				left: calc(50% - 15px);
 				top: calc(50% - 18px);
 				@include center;
-				
+
 				@mixin arrow-helper() {
 					content: '';
 					padding: 3px;
@@ -967,8 +970,4 @@ footer {
 			}
 		}
 	}
-	
-
-
-
 }

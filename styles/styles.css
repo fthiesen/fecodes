@@ -675,9 +675,6 @@ main .skills {
   text-align: center;
   padding: 8rem 0 6rem;
   background-color: #66ECAF;
-  max-height: 100vh;
-  max-height: 100dvh; /* iOS dynamic viewport height */
-  overflow-y: auto;
 }
 @media (max-width: 710px) {
   main .skills {
@@ -941,10 +938,12 @@ main .education .wrapper .subtitle {
 main .education .wrapper .subtitle::after {
   border-color: #F2F2F2;
 }
-main .education .wrapper .title, main .education .wrapper p {
+main .education .wrapper .title,
+main .education .wrapper p {
   color: #66ECAF;
 }
-main .education .wrapper p, main .education .wrapper li {
+main .education .wrapper p,
+main .education .wrapper li {
   color: #F2F2F2;
   margin-bottom: 0;
 }
@@ -990,7 +989,9 @@ main .experience .wrapper .columns div h4 + p {
 main .experience .wrapper .subtitle {
   color: #2E39BF;
 }
-main .experience .wrapper .title, main .experience .wrapper p, main .experience .wrapper li {
+main .experience .wrapper .title,
+main .experience .wrapper p,
+main .experience .wrapper li {
   color: black;
 }
 main .experience .wrapper ul {

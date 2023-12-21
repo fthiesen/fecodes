@@ -4,13 +4,26 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="With several years of hands-on experience, I bring a practical background in front-end development. My work is driven by curiosity, attention to detail, and persistence to innovate and tackle complex problems. With a track record of building intuitive websites and applications, I am passionate about creating seamless user experiences.">
-		<meta name="keywords" content="Frontend Web Developer, Web Designer, Toronto, Fernanda Thiesen">
-		<meta name="author" content="Fernanda Thiesen">
-		<meta property="og:image" content="./assets/fernanda-thiesen.jpg">
-		<meta property="og:image:alt" content="Fernanda Thiesen - Front-end developer with experience in graphic design and marketing">		
+		<meta
+			name="description"
+			content="With several years of hands-on experience, I bring a practical background in front-end development. My work is driven by curiosity, attention to detail, and persistence to innovate and tackle complex problems. With a track record of building intuitive websites and applications, I am passionate about creating seamless user experiences."
+		/>
+		<meta
+			name="keywords"
+			content="Frontend Web Developer, Web Designer, Toronto, Fernanda Thiesen"
+		/>
+		<meta name="author" content="Fernanda Thiesen" />
+		<meta property="og:image" content="./assets/fernanda-thiesen.jpg" />
+		<meta
+			property="og:image:alt"
+			content="Fernanda Thiesen - Front-end developer with experience in graphic design and marketing"
+		/>
 
-		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.4.min.js"
+			integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+			crossorigin="anonymous"
+		></script>
 
 		<!-- <link rel="stylesheet" href="https://use.typekit.net/mif6fss.css" /> -->
 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
@@ -19,44 +32,80 @@
 		<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 
 		<!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#2E39BF" />
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#2E39BF" />
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#2E39BF" />
+		<meta name="theme-color" content="#2E39BF" />
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#2E39BF" />
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#2E39BF" />
 
 		<style>
-
 			@font-face {
-				font-family:"forma-djr-micro";
-				src:url("https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-				font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+				font-family: 'forma-djr-micro';
+				src: url('https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+						format('woff2'),
+					url('https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+						format('woff'),
+					url('https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+						format('opentype');
+				font-display: auto;
+				font-style: normal;
+				font-weight: 400;
+				font-stretch: normal;
 			}
 
 			@font-face {
-				font-family:"forma-djr-micro";
-				src:url("https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
-				font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+				font-family: 'forma-djr-micro';
+				src: url('https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('woff2'),
+					url('https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('woff'),
+					url('https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('opentype');
+				font-display: auto;
+				font-style: normal;
+				font-weight: 500;
+				font-stretch: normal;
 			}
 
 			@font-face {
-				font-family:"cy";
-				src:url("https://use.typekit.net/af/940fef/00000000000000007735cab8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/940fef/00000000000000007735cab8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/940fef/00000000000000007735cab8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
-				font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+				font-family: 'cy';
+				src: url('https://use.typekit.net/af/940fef/00000000000000007735cab8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('woff2'),
+					url('https://use.typekit.net/af/940fef/00000000000000007735cab8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('woff'),
+					url('https://use.typekit.net/af/940fef/00000000000000007735cab8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('opentype');
+				font-display: auto;
+				font-style: normal;
+				font-weight: 500;
+				font-stretch: normal;
 			}
 
 			@font-face {
-				font-family:"new-spirit";
-				src:url("https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
-				font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+				font-family: 'new-spirit';
+				src: url('https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+						format('woff2'),
+					url('https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+						format('woff'),
+					url('https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+						format('opentype');
+				font-display: auto;
+				font-style: normal;
+				font-weight: 600;
+				font-stretch: normal;
 			}
 
-			.tk-forma-djr-micro { font-family: "forma-djr-micro",sans-serif; }
-			.tk-cy { font-family: "cy",sans-serif; }
-			.tk-new-spirit { font-family: "new-spirit",serif; }
-
+			.tk-forma-djr-micro {
+				font-family: 'forma-djr-micro', sans-serif;
+			}
+			.tk-cy {
+				font-family: 'cy', sans-serif;
+			}
+			.tk-new-spirit {
+				font-family: 'new-spirit', serif;
+			}
 		</style>
-		
+
 		<title>Fê Codes - Fernanda Thiesen - Frontend Web Developer - Toronto</title>
 	</head>
 	<body>
@@ -90,20 +139,33 @@
 						<h2 class="subtitle">About me</h2>
 						<!-- <h3 class="title">Team player + decision maker + innovator</h3> -->
 						<p>
-							With several years of hands-on experience, I bring a practical background in front-end development. My work is driven by curiosity, attention to detail, and persistence to innovate and tackle complex problems. With a track record of building intuitive websites and applications, I am passionate about creating seamless user experiences.
+							With several years of hands-on experience, I bring a practical background in front-end
+							development. My work is driven by curiosity, attention to detail, and persistence to
+							innovate and tackle complex problems. With a track record of building intuitive
+							websites and applications, I am passionate about creating seamless user experiences.
 						</p>
 						<p>
-							In my current role as a Software Developer at Milborne Group, I am responsible for developing and maintaining a cutting-edge real estate sales web app. This includes resolving bugs, improving code quality, enhancing user experience, and building new features to meet the evolving needs of the business (<a href="#experience">details about my experience</a>).
+							In my current role as a Software Developer at Milborne Group, I am responsible for
+							developing and maintaining a cutting-edge real estate sales web app. This includes
+							resolving bugs, improving code quality, enhancing user experience, and building new
+							features to meet the evolving needs of the business (<a href="#experience"
+								>details about my experience</a
+							>).
 						</p>
 						<p>
-							I am a Juno College of Technology graduate, specializing in web development, with over 20 years of experience in the field of web design. Additionally, I hold a Bachelor's Degree in Social Communications with a specialization in Marketing. As a lifelong learner, I am always seeking out new opportunities to expand my knowledge and skills as a developer.</p>
+							I am a Juno College of Technology graduate, specializing in web development, with over
+							20 years of experience in the field of web design. Additionally, I hold a Bachelor's
+							Degree in Social Communications with a specialization in Marketing. As a lifelong
+							learner, I am always seeking out new opportunities to expand my knowledge and skills
+							as a developer.
+						</p>
 						<p>
-							To learn more about my top talents, work style, and preferences, please visit my 
+							To learn more about my top talents, work style, and preferences, please visit my
 							<a href="https://secure.plum.io/p/4o5_E4mx7eIXeMtsCGI3Rw" target="_blank"
 								>Plum Profile</a
 							>.
 						</p>
-						<div class="buttons" style="margin-top: 30px;">
+						<div class="buttons" style="margin-top: 30px">
 							<a href="#experience" class="btn btn2 btn-closer">Experience</a>
 							<a href="#education" class="btn btn2 btn-closer">Education</a>
 						</div>
@@ -114,72 +176,72 @@
 				<div class="wrapper">
 					<h2 class="subtitle">Skills & Portfolio</h2>
 					<div class="skill">
-						<img src="./assets/icons/html5.svg" alt="html5 icon">
+						<img src="./assets/icons/html5.svg" alt="html5 icon" />
 						<h4>HTML 5</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/css3.svg" alt="css3 icon">
+						<img src="./assets/icons/css3.svg" alt="css3 icon" />
 						<h4>CSS 3</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/sass.svg" alt="sass icon">
+						<img src="./assets/icons/sass.svg" alt="sass icon" />
 						<h4>Sass</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/mui.svg" alt="material ui icon">
+						<img src="./assets/icons/mui.svg" alt="material ui icon" />
 						<h4>Material UI</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/js.svg" alt="javascript icon">
+						<img src="./assets/icons/js.svg" alt="javascript icon" />
 						<h4>JavaScript</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/jquery.svg" alt="jquery icon">
+						<img src="./assets/icons/jquery.svg" alt="jquery icon" />
 						<h4>jQuery</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/react.svg" alt="react icon">
+						<img src="./assets/icons/react.svg" alt="react icon" />
 						<h4>React JS</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/graphql.svg" alt="graphql icon">
+						<img src="./assets/icons/graphql.svg" alt="graphql icon" />
 						<h4>Graphql</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/mongodb.svg" alt="mongodb icon">
+						<img src="./assets/icons/mongodb.svg" alt="mongodb icon" />
 						<h4>MongoDB</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/firebase.svg" alt="firebase icon">
+						<img src="./assets/icons/firebase.svg" alt="firebase icon" />
 						<h4>Firebase</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/github.svg" alt="github icon">
+						<img src="./assets/icons/github.svg" alt="github icon" />
 						<h4>GitHub</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/gitlab.svg" alt="gitlab icon">
+						<img src="./assets/icons/gitlab.svg" alt="gitlab icon" />
 						<h4>GitLab</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/git.svg" alt="git icon">
+						<img src="./assets/icons/git.svg" alt="git icon" />
 						<h4>Git</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/reast-api.svg" alt="rest api icon">
+						<img src="./assets/icons/reast-api.svg" alt="rest api icon" />
 						<h4>REST API</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/command-line.svg" alt="command line icon">
+						<img src="./assets/icons/command-line.svg" alt="command line icon" />
 						<h4>Command line</h4>
 					</div>
 					<div class="skill">
-						<img src="./assets/icons/responsive-design.svg" alt="responsive design icon">
-						<h4>Responsive design</h4>
+						<img src="./assets/icons/accessibility.svg" alt="accessibility icon" />
+						<h4>Accessibility</h4>
 					</div>
 					<div class="skill">
-					<img src="./assets/icons/accessibility.svg" alt="accessibility icon">
-						<h4>Accessibility</h4>
+						<img src="./assets/icons/responsive-design.svg" alt="responsive design icon" />
+						<h4>Responsive design</h4>
 					</div>
 				</div>
 			</section>
@@ -190,20 +252,21 @@
 						<div class="left">
 							<img
 								src="./assets/projects/authentication-app.webp"
-								alt="Screenshot of the Firebase Auth project" 
+								alt="Screenshot of the Firebase Auth project"
 							/>
 						</div>
 						<div class="right">
 							<h3 class="subtitle">ReactJS, Material UI, Vite, Firebase</h3>
 							<h2 class="title">Firebase Authentication Web App</h2>
-							<p>A Firebase Authentication React app created with Vite. Projects are saved in the Firebase Database, profile pictures in the Firebase Storage and the app is deployed to Firebase Hosting via GitHub.</p>
+							<p>
+								A Firebase Authentication React app created with Vite. Projects are saved in the
+								Firebase Database, profile pictures in the Firebase Storage and the app is deployed
+								to Firebase Hosting via GitHub.
+							</p>
 							<div class="buttons">
 								<a href="https://portfolio-826d0.firebaseapp.com/" target="_blank" class="btn"
 									>Live project</a
-								><a
-									href="https://github.com/fthiesen/firebase-auth"
-									target="_blank"
-									class="btn"
+								><a href="https://github.com/fthiesen/firebase-auth" target="_blank" class="btn"
 									>GitHub</a
 								>
 							</div>
@@ -224,11 +287,9 @@
 								<a href="https://melissalocquiao.com/" target="_blank">Melissa</a>.
 							</p>
 							<div class="buttons">
-								<a href="https://popsipoll-juno.netlify.app/" target="_blank" class="btn">Live project</a
-								><a
-									href="https://github.com/fthiesen/popsipoll"
-									target="_blank"
-									class="btn"
+								<a href="https://popsipoll-juno.netlify.app/" target="_blank" class="btn"
+									>Live project</a
+								><a href="https://github.com/fthiesen/popsipoll" target="_blank" class="btn"
 									>GitHub</a
 								>
 							</div>
@@ -426,19 +487,19 @@
 				<div class="project">
 					<div class="wrapper">
 						<div class="left">
-							<img
-								src="./assets/projects/buildiq.webp"
-								alt="Screenshot of the Site Build IQ"
-							/>
+							<img src="./assets/projects/buildiq.webp" alt="Screenshot of the Site Build IQ" />
 						</div>
 						<div class="right">
 							<h3 class="subtitle">HTML, CSS</h3>
 							<h2 class="title">Build IQ</h2>
 							<p>
-								A responsive coming soon page designed and coded following brand identity guidelines.
+								A responsive coming soon page designed and coded following brand identity
+								guidelines.
 							</p>
 							<div class="buttons">
-								<a href="./assets/projects/build-iq/coming-soon.html" target="_blank" class="btn">Website</a>
+								<a href="./assets/projects/build-iq/coming-soon.html" target="_blank" class="btn"
+									>Website</a
+								>
 							</div>
 						</div>
 					</div>
@@ -484,7 +545,7 @@
 						<li>Git</li>
 						<li>Rest API</li>
 						<li>Command Line</li>
-						<li>Responsive Design</li>					
+						<li>Responsive Design</li>
 					</ul>
 					<ul class="marquee__content" aria-hidden="true">
 						<li>HTML</li>
@@ -502,7 +563,7 @@
 						<li>Rest API</li>
 						<li>Command Line</li>
 						<li>Responsive Design</li>
-					</ul>				
+					</ul>
 				</div>
 			</section>
 			<section id="experience" class="education experience">
@@ -512,33 +573,104 @@
 						<div>
 							<h3 class="title">Front End Web Developer (2021-Present)</h3>
 							<h4>Milborne Group</h4>
-							<p>As a Software Engineer at Milborne, I develop and maintain a real estate sales web app, resolving bugs, improving code quality, enhancing user experience, adding functionalities and building new features.</p>
+							<p>
+								As a Software Engineer at Milborne, I develop and maintain a real estate sales web
+								app, resolving bugs, improving code quality, enhancing user experience, adding
+								functionalities and building new features.
+							</p>
 							<ul>
-								<li>Successfully planned, designed and developed various features with the goal of automating the set up of new projects in the company’s sales web application, reducing managers’ requests and redirecting the development team’s efforts away from manual and repetitive tasks.</li>
-								<li>Independently built a feature that allows admins to set multiple conditions used in the generation of purchase and sale agreements, including the selection of unit details and documents to be inserted as a specific page of the contract, allowing for each deal to be fully customized.</li>
-								<li>Actively and consistently proposed and implemented UI enhancements to boost visual experience and usability, as well as created table and chart reports, improving data analysis and visualization, facilitating decision-making.</li>
-								<li>Independently redesigned the entire app utilizing Material UI styles in accordance with a newly established brand identity provided by a design agency, bridging the design gaps for areas that were not covered, ensuring a seamless and consistent design throughout the app <a href="/redesign.html">(see before and after screenshots).</a></li>
-								<li>Collaborated closely with the backend developer to develop a unit tracker table from scratch in order to incorporate into the app a complex spreadsheet used by sales admins to track deals, also allowing them to set instructions, statuses and add detailed information and notes for all units in just one place.</li>
-								<li>Constantly tweaked the backend not only to accommodate new features, but also to reactivate cron jobs for email reminders and integrate the app with a third party email delivery platform, as well as develop an email tracking feature that allows users to see an activity log of opened emails sent out to purchasers and realtors, which offered me great exposure to backend technologies within the MERN stack and GraphQL Apollo Server and schemas.</li>
-								<li>Successfully upgraded the app to the latest versions of React and Material UI, which involved handling significant breaking changes related to the React Hook Form library, MUI Date Component and Apollo Client.</li>
+								<li>
+									Successfully planned, designed and developed various features with the goal of
+									automating the set up of new projects in the company’s sales web application,
+									reducing managers’ requests and redirecting the development team’s efforts away
+									from manual and repetitive tasks.
+								</li>
+								<li>
+									Independently built a feature that allows admins to set multiple conditions used
+									in the generation of purchase and sale agreements, including the selection of unit
+									details and documents to be inserted as a specific page of the contract, allowing
+									for each deal to be fully customized.
+								</li>
+								<li>
+									Actively and consistently proposed and implemented UI enhancements to boost visual
+									experience and usability, as well as created table and chart reports, improving
+									data analysis and visualization, facilitating decision-making.
+								</li>
+								<li>
+									Independently redesigned the entire app utilizing Material UI styles in accordance
+									with a newly established brand identity provided by a design agency, bridging the
+									design gaps for areas that were not covered, ensuring a seamless and consistent
+									design throughout the app
+									<a href="/redesign.html">(see before and after screenshots).</a>
+								</li>
+								<li>
+									Collaborated closely with the backend developer to develop a unit tracker table
+									from scratch in order to incorporate into the app a complex spreadsheet used by
+									sales admins to track deals, also allowing them to set instructions, statuses and
+									add detailed information and notes for all units in just one place.
+								</li>
+								<li>
+									Constantly tweaked the backend not only to accommodate new features, but also to
+									reactivate cron jobs for email reminders and integrate the app with a third party
+									email delivery platform, as well as develop an email tracking feature that allows
+									users to see an activity log of opened emails sent out to purchasers and realtors,
+									which offered me great exposure to backend technologies within the MERN stack and
+									GraphQL Apollo Server and schemas.
+								</li>
+								<li>
+									Successfully upgraded the app to the latest versions of React and Material UI,
+									which involved handling significant breaking changes related to the React Hook
+									Form library, MUI Date Component and Apollo Client.
+								</li>
 							</ul>
 						</div>
 						<div>
 							<h3 class="title">Web Designer (1999-2021)</h3>
 							<h4>Freelancer</h4>
 							<ul>
-								<li>Engaged with hundreds of small business owners and managers, uncovering their needs and suggesting marketing and graphic design ideas as well as WordPress functionalities and website solutions within their budgets.</li>
-								<li>Designed and customized WordPress themes to match the clients' brand guidelines, introduced plugins to make the websites more interactive, optimized them for SEO, and provided content updates and technical support.</li>
-								<li>Worked both individually and with hosting support teams to troubleshoot WordPress and server issues for clients.</li>
+								<li>
+									Engaged with hundreds of small business owners and managers, uncovering their
+									needs and suggesting marketing and graphic design ideas as well as WordPress
+									functionalities and website solutions within their budgets.
+								</li>
+								<li>
+									Designed and customized WordPress themes to match the clients' brand guidelines,
+									introduced plugins to make the websites more interactive, optimized them for SEO,
+									and provided content updates and technical support.
+								</li>
+								<li>
+									Worked both individually and with hosting support teams to troubleshoot WordPress
+									and server issues for clients.
+								</li>
 							</ul>
 							<h3 class="title">Editor-in-chief, Marketer, Web Designer (2009-2022)</h3>
 							<h4>OiCanada / Self-Employed</h4>
 							<ul>
-								<li>Developed the online magazine from scratch and reached a substantial average of 100,000 page views per month in 2016.</li>
-								<li>Worked individually as a web designer, creating several designs over the years, always keeping a fresh look for the readers, as well as customized some ready-made WordPress themes to match the magazine’s brand guidelines.</li>
-								<li>Engaged with several advertisers and partners, understanding their services, products and campaign goals to help them promote their businesses to the magazine’s audience and generate leads by putting together and delivering a promotion package including banner ads, paid content, landing pages, email marketing and social media marketing.</li>
-								<li>Collaborated with volunteers and contributors as editor-in-chief, creating, assigning, writing, editing and proofreading content in Portuguese.</li>
-								<li>Successfully published more than 1,500 pieces in Portuguese covering tourism, language schools, universities, colleges, high school programs, immigration, work, and culture.</li>
+								<li>
+									Developed the online magazine from scratch and reached a substantial average of
+									100,000 page views per month in 2016.
+								</li>
+								<li>
+									Worked individually as a web designer, creating several designs over the years,
+									always keeping a fresh look for the readers, as well as customized some ready-made
+									WordPress themes to match the magazine’s brand guidelines.
+								</li>
+								<li>
+									Engaged with several advertisers and partners, understanding their services,
+									products and campaign goals to help them promote their businesses to the
+									magazine’s audience and generate leads by putting together and delivering a
+									promotion package including banner ads, paid content, landing pages, email
+									marketing and social media marketing.
+								</li>
+								<li>
+									Collaborated with volunteers and contributors as editor-in-chief, creating,
+									assigning, writing, editing and proofreading content in Portuguese.
+								</li>
+								<li>
+									Successfully published more than 1,500 pieces in Portuguese covering tourism,
+									language schools, universities, colleges, high school programs, immigration, work,
+									and culture.
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -577,17 +709,17 @@
 						<ul>
 							<li>
 								<a href="https://github.com/fthiesen/" target="_blank">
-									<img src="./assets/icons/github.svg" alt="github icon">
+									<img src="./assets/icons/github.svg" alt="github icon" />
 								</a>
 							</li>
 							<li>
 								<a href="https://gitlab.com/fthiesen" target="_blank">
-									<img src="./assets/icons/gitlab.svg" alt="gitlab icon">
+									<img src="./assets/icons/gitlab.svg" alt="gitlab icon" />
 								</a>
 							</li>
 							<li>
 								<a href="https://ca.linkedin.com/in/fernanda-thiesen" target="_blank">
-									<img src="./assets/icons/linkedin.svg" alt="linkedin icon">
+									<img src="./assets/icons/linkedin.svg" alt="linkedin icon" />
 								</a>
 							</li>
 							<!-- <li>
@@ -631,7 +763,9 @@
 								</a>
 							</li> -->
 						</ul>
-						<a href="./assets/fernanda-thiesen-resume.pdf" class="btn" target="_blank">Download Resume (PDF)</a>
+						<a href="./assets/fernanda-thiesen-resume.pdf" class="btn" target="_blank"
+							>Download Resume (PDF)</a
+						>
 					</div>
 					<div class="right">
 						<div class="divider"></div>
@@ -658,29 +792,33 @@
 			<p>&copy; 2021-<span id="current-year" class="current-year">2021</span> — Fernanda Thiesen</p>
 		</footer>
 
-		<script data-goatcounter="https://fecodes.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+		<script
+			data-goatcounter="https://fecodes.goatcounter.com/count"
+			async
+			src="//gc.zgo.at/count.js"
+		></script>
 		<script>
 			const datetime = new Date().getFullYear()
-			document.getElementById("current-year").textContent = datetime
-			
+			document.getElementById('current-year').textContent = datetime
+
 			// fix section when it reached the top
-			var fixmeTop = $('.fixme').offset().top;
-			$(window).scroll(function() {
-					var currentScroll = $(window).scrollTop();					
-					if (currentScroll >= fixmeTop) {
-							$('.fixme').css({
-									position: 'sticky',
-									top: '0',
-									left: '0',
-									'z-index': '999'
-							});
-					} else {
-							$('.fixme').css({
-									position: 'static'
-							});
-					}
-			});
-		</script>			
+			var fixmeTop = $('.fixme').offset().top
+			$(window).scroll(function () {
+				var currentScroll = $(window).scrollTop()
+				if (currentScroll >= fixmeTop) {
+					$('.fixme').css({
+						position: 'sticky',
+						top: '0',
+						left: '0',
+						'z-index': '999',
+					})
+				} else {
+					$('.fixme').css({
+						position: 'static',
+					})
+				}
+			})
+		</script>
 	</body>
 </html>
 <!-- Mockups by https://mockuphone.com/ 1.6 aspect ratio -->
