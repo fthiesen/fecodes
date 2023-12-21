@@ -326,7 +326,7 @@ main {
 		background: linear-gradient(-90deg, $light 65%, $primary 35%);
 
 		@include mobile {
-			background: linear-gradient(-360deg, $light 70%, $primary 30%);
+			background: linear-gradient(-360deg, $light 75%, $primary 25%);
 		}
 
 		.wrapper {

@@ -602,8 +602,8 @@ main .about {
 }
 @media (max-width: 710px) {
   main .about {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, #F2F2F2), color-stop(30%, #2E39BF));
-    background: linear-gradient(-360deg, #F2F2F2 70%, #2E39BF 30%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(75%, #F2F2F2), color-stop(25%, #2E39BF));
+    background: linear-gradient(-360deg, #F2F2F2 75%, #2E39BF 25%);
   }
 }
 main .about .wrapper {
