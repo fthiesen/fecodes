@@ -608,19 +608,20 @@
 									<a href="/redesign.html">See before/after screenshots</a>.
 								</li>
 								<li>
-									Developed a custom autocomplete form field component optimized for loading and
-									searching over 5,000 brokers. The backend features a GraphQL resolver with MongoDB
-									aggregation for dynamic full name concatenation and efficient filtering.
-									Implemented pagination and sorting directly in the database, significantly
-									reducing page loading times while returning both sorted results and total match
-									counts in a single query. On the frontend, I designed a reusable advanced
-									autocomplete interface with React and Material UI's TextField and Popper, tailored
-									for enhanced usability with custom styles. It includes a debounce mechanism for
-									search input to minimize server load and improve responsiveness. I integrated the
-									IntersectionObserver to implement infinite scrolling, loading additional data
-									seamlessly as the user scrolls. This approach, combined with the ability to cancel
-									obsolete requests via AbortController, ensures that the UI remains efficient and
-									responsive to user interactions, even with large datasets.
+									Developed a reusable and performant autocomplete form field component optimized
+									for loading and searching through over 5,000 brokers. The backend features a
+									GraphQL resolver with MongoDB aggregation for dynamic full name concatenation and
+									efficient filtering. I implemented pagination and sorting directly in the
+									database, significantly reducing page loading times while delivering both sorted
+									results and total match counts in a single query. On the frontend, I designed an
+									advanced autocomplete interface using React and Material-UI's TextField and
+									Popper, tailored for enhanced usability with custom styles and keyboard
+									accessibility. It includes a debounce mechanism for the search input to minimize
+									server load and improve responsiveness. I integrated the IntersectionObserver to
+									implement infinite scrolling, seamlessly loading additional data as the user
+									scrolls. This approach, combined with the ability to cancel obsolete requests via
+									the AbortController, ensures that the UI remains efficient and responsive to user
+									interactions, even with large datasets.
 								</li>
 								<li>
 									Designed and developed a feature that tracks opened emails using a tracking pixel
