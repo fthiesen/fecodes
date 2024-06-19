@@ -5,57 +5,106 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<meta name="description" content="Light Mode - Independently redesigned the entire app utilizing Material UI styles in accordance with a newly established brand identity provided by a design agency, ensuring a seamless and consistent design throughout the app.">
-		<meta name="keywords" content="Experience with Material UI, Light Mode, MUI, Redesign, Frontend Web Developer">
+		<meta
+			name="description"
+			content="Light Mode - Independently redesigned the entire app utilizing Material UI styles in accordance with a newly established brand identity provided by a design agency, ensuring a seamless and consistent design throughout the app."
+		/>
+		<meta
+			name="keywords"
+			content="Experience with Material UI, Light Mode, MUI, Redesign, Frontend Web Developer"
+		/>
 
-		<meta name="author" content="Fernanda Thiesen">
-		<meta property="og:image" content="./assets/fernanda-thiesen.jpg">
-		<meta property="og:image:alt" content="Fernanda Thiesen - Front-end developer with experience in graphic design and marketing">		
+		<meta name="author" content="Fernanda Thiesen" />
+		<meta property="og:image" content="./assets/fernanda-thiesen.jpg" />
+		<meta
+			property="og:image:alt"
+			content="Fernanda Thiesen - Front-end developer with experience in graphic design and marketing"
+		/>
 
-		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.4.min.js"
+			integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+			crossorigin="anonymous"
+		></script>
 
 		<link rel="stylesheet" href="./styles/styles.css" />
 		<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 
 		<!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#2E39BF" />
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#2E39BF" />
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#2E39BF" />
+		<meta name="theme-color" content="#2E39BF" />
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#2E39BF" />
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#2E39BF" />
 
 		<style>
-
 			@font-face {
-				font-family:"forma-djr-micro";
-				src:url("https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-				font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+				font-family: 'forma-djr-micro';
+				src: url('https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+						format('woff2'),
+					url('https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+						format('woff'),
+					url('https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+						format('opentype');
+				font-display: auto;
+				font-style: normal;
+				font-weight: 400;
+				font-stretch: normal;
 			}
 
 			@font-face {
-				font-family:"forma-djr-micro";
-				src:url("https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
-				font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+				font-family: 'forma-djr-micro';
+				src: url('https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('woff2'),
+					url('https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('woff'),
+					url('https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('opentype');
+				font-display: auto;
+				font-style: normal;
+				font-weight: 500;
+				font-stretch: normal;
 			}
 
 			@font-face {
-				font-family:"cy";
-				src:url("https://use.typekit.net/af/940fef/00000000000000007735cab8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/940fef/00000000000000007735cab8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/940fef/00000000000000007735cab8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
-				font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+				font-family: 'cy';
+				src: url('https://use.typekit.net/af/940fef/00000000000000007735cab8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('woff2'),
+					url('https://use.typekit.net/af/940fef/00000000000000007735cab8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('woff'),
+					url('https://use.typekit.net/af/940fef/00000000000000007735cab8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+						format('opentype');
+				font-display: auto;
+				font-style: normal;
+				font-weight: 500;
+				font-stretch: normal;
 			}
 
 			@font-face {
-				font-family:"new-spirit";
-				src:url("https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
-				font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+				font-family: 'new-spirit';
+				src: url('https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+						format('woff2'),
+					url('https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+						format('woff'),
+					url('https://use.typekit.net/af/19f9aa/00000000000000007735c4be/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+						format('opentype');
+				font-display: auto;
+				font-style: normal;
+				font-weight: 600;
+				font-stretch: normal;
 			}
 
-			.tk-forma-djr-micro { font-family: "forma-djr-micro",sans-serif; }
-			.tk-cy { font-family: "cy",sans-serif; }
-			.tk-new-spirit { font-family: "new-spirit",serif; }
-
+			.tk-forma-djr-micro {
+				font-family: 'forma-djr-micro', sans-serif;
+			}
+			.tk-cy {
+				font-family: 'cy', sans-serif;
+			}
+			.tk-new-spirit {
+				font-family: 'new-spirit', serif;
+			}
 		</style>
-		
+
 		<title>Fê Codes - BuildIQ UI Redesign - Light Mode</title>
 	</head>
 	<body>
@@ -64,58 +113,128 @@
 				<div class="top-bar">
 					<div class="logo">{ fê codes }</div>
 				</div>
-				<div class="content" style="padding: 80px 0 50px;">
+				<div class="content" style="padding: 80px 0 50px">
 					<h1>BuildIQ UI Redesign</h1>
 					<p>(<a href="/redesign.html">see dark mode</a>)</p>
 				</div>
 			</div>
 		</header>
-		
+
 		<main>
 			<section class="wrapper before-and-after">
 				<div>
 					<h2>Login Screen</h2>
-					<div class='slider-container'>
-						<div class='img' style="background-image: url('./assets/redesign/login-after2.png')"></div>
-						<div class='img foreground-img img1' style="background-image: url('./assets/redesign/login-before.png')"></div>
-						<input type="range" min="0" max="100" value="50" class="slider" name='slider1' id="slider1">
-						<div class='slider-button  slider-button1'></div>
+					<div class="slider-container">
+						<div
+							class="img"
+							style="background-image: url('./assets/redesign/login-after2.png')"
+						></div>
+						<div
+							class="img foreground-img img1"
+							style="background-image: url('./assets/redesign/login-before.png')"
+						></div>
+						<input
+							type="range"
+							min="0"
+							max="100"
+							value="50"
+							class="slider"
+							name="slider1"
+							id="slider1"
+						/>
+						<div class="slider-button slider-button1"></div>
 					</div>
 				</div>
 				<div>
 					<h2>Building Grid</h2>
-					<div class='slider-container'>
-						<div class='img' style="background-image: url('./assets/redesign/grid-after2.png')"></div>
-						<div class='img foreground-img img2' style="background-image: url('./assets/redesign/grid-before.png')"></div>
-						<input type="range" min="0" max="100" value="50" class="slider" name='slider2' id="slider2">
-						<div class='slider-button slider-button2'></div>
+					<div class="slider-container">
+						<div
+							class="img"
+							style="background-image: url('./assets/redesign/grid-after2.png')"
+						></div>
+						<div
+							class="img foreground-img img2"
+							style="background-image: url('./assets/redesign/grid-before.png')"
+						></div>
+						<input
+							type="range"
+							min="0"
+							max="100"
+							value="50"
+							class="slider"
+							name="slider2"
+							id="slider2"
+						/>
+						<div class="slider-button slider-button2"></div>
 					</div>
 				</div>
 				<div>
 					<h2>Review Deal</h2>
-					<div class='slider-container'>
-						<div class='img' style="background-image: url('./assets/redesign/review-after2.png')"></div>
-						<div class='img foreground-img img3' style="background-image: url('./assets/redesign/review-before.png')"></div>
-						<input type="range" min="0" max="100" value="50" class="slider" name='slider3' id="slider3">
-						<div class='slider-button slider-button3'></div>
+					<div class="slider-container">
+						<div
+							class="img"
+							style="background-image: url('./assets/redesign/review-after2.png')"
+						></div>
+						<div
+							class="img foreground-img img3"
+							style="background-image: url('./assets/redesign/review-before.png')"
+						></div>
+						<input
+							type="range"
+							min="0"
+							max="100"
+							value="50"
+							class="slider"
+							name="slider3"
+							id="slider3"
+						/>
+						<div class="slider-button slider-button3"></div>
 					</div>
 				</div>
 				<div>
 					<h2>Bed Type Graphs</h2>
-					<div class='slider-container'>
-						<div class='img' style="background-image: url('./assets/redesign/bedtype-after2.png')"></div>
-						<div class='img foreground-img img4' style="background-image: url('./assets/redesign/bedtype-before.png')"></div>
-						<input type="range" min="0" max="100" value="50" class="slider" name='slider4' id="slider4">
-						<div class='slider-button slider-button4'></div>
+					<div class="slider-container">
+						<div
+							class="img"
+							style="background-image: url('./assets/redesign/bedtype-after2.png')"
+						></div>
+						<div
+							class="img foreground-img img4"
+							style="background-image: url('./assets/redesign/bedtype-before.png')"
+						></div>
+						<input
+							type="range"
+							min="0"
+							max="100"
+							value="50"
+							class="slider"
+							name="slider4"
+							id="slider4"
+						/>
+						<div class="slider-button slider-button4"></div>
 					</div>
 				</div>
 				<div>
 					<h2>CRM</h2>
-					<div class='slider-container'>
-						<div class='img' style="background-image: url('./assets/redesign/crm-after2.png')"></div>
-						<div class='img foreground-img img5' style="background-image: url('./assets/redesign/crm-before.png')"></div>
-						<input type="range" min="0" max="100" value="50" class="slider" name='slider5' id="slider5">
-						<div class='slider-button slider-button5'></div>
+					<div class="slider-container">
+						<div
+							class="img"
+							style="background-image: url('./assets/redesign/crm-after2.png')"
+						></div>
+						<div
+							class="img foreground-img img5"
+							style="background-image: url('./assets/redesign/crm-before.png')"
+						></div>
+						<input
+							type="range"
+							min="0"
+							max="100"
+							value="50"
+							class="slider"
+							name="slider5"
+							id="slider5"
+						/>
+						<div class="slider-button slider-button5"></div>
 					</div>
 				</div>
 				<a href="/" class="btn">< Back to the homepage</a>
@@ -134,21 +253,21 @@
 							You can send me a message or book a virtual meeting on my
 							<a href="https://calendly.com/fcthiesen/virtual-meeting" target="_blank">Calendly</a>.
 						</p> -->
-						<p><a href="mailto:fcthiesen@gmail.com">fcthiesen@gmail.com</a></p>
+						<p><a href="mailto:fthiesen@protonmail.com">fthiesen@protonmail.com</a></p>
 						<ul>
 							<li>
 								<a href="https://github.com/fthiesen/" target="_blank">
-									<img src="./assets/icons/github.svg" alt="github icon">
+									<img src="./assets/icons/github.svg" alt="github icon" />
 								</a>
 							</li>
 							<li>
 								<a href="https://gitlab.com/fthiesen" target="_blank">
-									<img src="./assets/icons/gitlab.svg" alt="gitlab icon">
+									<img src="./assets/icons/gitlab.svg" alt="gitlab icon" />
 								</a>
 							</li>
 							<li>
 								<a href="https://ca.linkedin.com/in/fernanda-thiesen" target="_blank">
-									<img src="./assets/icons/linkedin.svg" alt="linkedin icon">
+									<img src="./assets/icons/linkedin.svg" alt="linkedin icon" />
 								</a>
 							</li>
 							<!-- <li>
@@ -192,7 +311,9 @@
 								</a>
 							</li> -->
 						</ul>
-						<a href="./assets/fernanda-thiesen-resume.pdf" class="btn" target="_blank">Download Resume (PDF)</a>
+						<a href="./assets/fernanda-thiesen-resume.pdf" class="btn" target="_blank"
+							>Download Resume (PDF)</a
+						>
 					</div>
 					<div class="right">
 						<div class="divider"></div>
@@ -219,19 +340,23 @@
 			<p>&copy; 2021-<span id="current-year" class="current-year">2021</span> — Fernanda Thiesen</p>
 		</footer>
 
-		<script data-goatcounter="https://fecodes.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+		<script
+			data-goatcounter="https://fecodes.goatcounter.com/count"
+			async
+			src="//gc.zgo.at/count.js"
+		></script>
 		<script>
 			const datetime = new Date().getFullYear()
-			document.getElementById("current-year").textContent = datetime
+			document.getElementById('current-year').textContent = datetime
 
-			const slides = [1,2,3,4,5]
+			const slides = [1, 2, 3, 4, 5]
 			slides.forEach(slideIndex => {
-				$(`#slider${slideIndex}`).on("input change", (e)=> {
-					const sliderPos = e.target.value;
+				$(`#slider${slideIndex}`).on('input change', e => {
+					const sliderPos = e.target.value
 					$(`.img${slideIndex}`).css('width', `${sliderPos}%`)
 					$(`.slider-button${slideIndex}`).css('left', `calc(${sliderPos}% - 15px)`)
-				});
-			})			
-		</script>			
+				})
+			})
+		</script>
 	</body>
 </html>
